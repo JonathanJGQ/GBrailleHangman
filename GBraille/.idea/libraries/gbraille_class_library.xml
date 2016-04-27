@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gbraille_class_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gbraille_class_library/bin/gbraille_class_library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

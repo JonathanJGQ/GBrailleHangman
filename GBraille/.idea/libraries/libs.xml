@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gbraille_class_library/libs/mint-4.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_class_library/libs/androlog-1.0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_class_library/libs/UHL.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

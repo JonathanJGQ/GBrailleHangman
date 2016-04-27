@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/libs/milyn-smooks-all-1.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

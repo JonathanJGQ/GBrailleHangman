@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gbraille_teclado/bin/dexedLibs/androlog-1.0.5-54b39bf50c158d3656821b96e1ac6e93.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_teclado/bin/dexedLibs/gbraille_class_library-a8b78b5c619a0862fac0d13343690e5f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_teclado/bin/dexedLibs/android-support-v4-873188ed83681ea4b90e315f1d75485c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_teclado/bin/dexedLibs/mint-4.0.2-26621ca096c946a02e3fea28076d3aa1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_teclado/bin/dexedLibs/UHL-f77ec3ffaf54b52797e325f103516d33.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

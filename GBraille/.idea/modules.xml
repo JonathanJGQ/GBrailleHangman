@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gbraille_class_library/gbraille_class_library.iml" filepath="$PROJECT_DIR$/gbraille_class_library/gbraille_class_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gbraille_forca/gbraille_forca.iml" filepath="$PROJECT_DIR$/gbraille_forca/gbraille_forca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gbraille_launcher/gbraille_launcher.iml" filepath="$PROJECT_DIR$/gbraille_launcher/gbraille_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gbraille_teclado/gbraille_teclado.iml" filepath="$PROJECT_DIR$/gbraille_teclado/gbraille_teclado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gbraille_teclado_test/gbraille_teclado_test.iml" filepath="$PROJECT_DIR$/gbraille_teclado_test/gbraille_teclado_test.iml" />
+    </modules>
+  </component>
+</project>

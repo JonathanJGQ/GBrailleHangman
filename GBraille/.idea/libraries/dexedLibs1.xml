@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="dexedLibs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/androlog-1.0.5-54b39bf50c158d3656821b96e1ac6e93.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/UHL-f77ec3ffaf54b52797e325f103516d33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/milyn-smooks-all-1.4.1-ecc891838666da93a67d00a20f8b8264.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/mint-4.0.2-26621ca096c946a02e3fea28076d3aa1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/android-support-v4-89413cec9da2954bf8aac021fe7f14e8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gbraille_forca/bin/dexedLibs/gbraille_class_library-a8b78b5c619a0862fac0d13343690e5f.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
