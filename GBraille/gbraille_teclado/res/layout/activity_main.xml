@@ -1,0 +1,18 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:stretchColumns="0,1"
+android:id="@+id/RelativeLayout1"
+>
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center_horizontal">        
+        
+    <LinearLayout android:background="@drawable/customborder" android:id="@+id/square1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="vertical"/>
+    <LinearLayout android:background="@drawable/customborder" android:id="@+id/square2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="vertical"/>
+    </TableRow>
+    <TableRow android:id="@+id/square3">
+    </TableRow>
+    	
+</TableLayout>

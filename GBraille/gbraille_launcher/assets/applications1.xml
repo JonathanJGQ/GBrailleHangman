@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<menu>
+   <app>
+      <description>S M S</description>
+      <description_en>S M S</description_en>
+      <description_es>S M S</description_es>
+      <icon>@drawable/icon_sms</icon>
+      <icon_bluecontrast>@drawable/icon_sms_white</icon_bluecontrast>
+      <package>com.gbraille.historinhas</package>
+      <activity>com.gbraille.historinhas.MainActivity</activity>
+      <type>application</type>
+      <function>-</function>
+   </app>
+   
+   <app>
+      <description>forca</description>
+      <description_en>Hangman</description_en>
+      <description_es>Ahorcado</description_es>
+      <icon>@drawable/icon_forca</icon>
+      <icon_bluecontrast>@drawable/icon_forca_white</icon_bluecontrast>
+      <package>com.gbraille.forca</package>
+      <activity>com.gbraille.forca.activity.MainScreenActivity</activity>
+      <type>application</type>
+      <function>-</function>
+   </app>
+   
+   <app>
+      <description>teclado</description>
+      <description_en>keyboard</description_en>
+      <description_es>Teclado</description_es>
+      <icon>@drawable/icon_teclado</icon>
+      <icon_bluecontrast>@drawable/icon_teclado_white</icon_bluecontrast>
+      <package>com.gbraille.keyboard</package>
+      <activity>com.gbraille.keyboard.MainActivity</activity>
+      <type>application</type>
+      <function>-</function>
+   </app>
+      
+   <app>
+      <description>aumentar volume</description>
+      <description_en>increase volume</description_en>
+      <description_es>Subir el volumen</description_es>
+      <icon>@drawable/icon_audioup</icon>
+      <icon_bluecontrast>@drawable/icon_audioup_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>increaseVolume</function>
+   </app>
+   
+   <app>
+      <description>diminuir volume</description>
+      <description_en>decrease volume</description_en>
+      <description_es>Bajar el volumen</description_es>
+      <icon>@drawable/icon_audiodown</icon>
+      <icon_bluecontrast>@drawable/icon_audiodown_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>decreaseVolume</function>
+   </app>
+   
+   <app>
+      <description>próxima tela</description>
+      <description_en>next screen</description_en>
+      <description_es>la pantalla siguiente</description_es>
+      <icon>@drawable/icon_avancar</icon>
+      <icon_bluecontrast>@drawable/icon_avancar_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>nextScreen</function>
+   </app>
+</menu>

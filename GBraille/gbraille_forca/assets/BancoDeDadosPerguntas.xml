@@ -1,0 +1,1202 @@
+<?xml version="1.0"?>
+           
+
+<respostas xmlns="urn:schemas-microsoft-com:office:spreadsheet">
+    
+    <!-- Questões ortográficas nível fácil em pt -->
+    
+    <questao>
+        <question>
+        Com que letra se escreve a palavra: joelho? com g? Ou com j?
+        </question>
+        <answer>
+            joelho
+        </answer>
+        <missingCharPos>
+            1
+        </missingCharPos>
+        <dificuldade>
+            FACIL
+        </dificuldade>
+        <jogo>
+            ORTOGRAFICO
+        </jogo>
+        <lingua>
+            PT
+        </lingua>
+    </questao>
+    
+    <questao>
+        <question>
+            Com que letra se escreve a palavra: gelo? Com g? Ou com j?
+        </question>
+        <answer>
+            gelo
+        </answer>
+        <missingCharPos>
+            1
+        </missingCharPos>
+        <dificuldade>
+            FACIL
+        </dificuldade>
+        <jogo>
+            ORTOGRAFICO
+        </jogo>
+        <lingua>
+            PT
+        </lingua>
+    </questao>
+    
+    <questao>
+        <question>
+            Com que letra se escreve a palavra: fácil? Com s? Ou com c?
+		</question>
+		<answer>
+	    	fácil
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+            FACIL
+        </dificuldade>
+        <jogo>
+            ORTOGRAFICO
+        </jogo>
+        <lingua>
+            PT
+        </lingua>
+	</questao>
+	
+    <questao>
+	    <question>
+	        Com que letra se escreve a palavra: louça? com cedilha? Ou com c?
+    	</question>
+	    <answer>
+	    	louça
+    	</answer>
+    	<missingCharPos>
+			4
+		</missingCharPos>
+		<dificuldade>
+            FACIL
+        </dificuldade>
+        <jogo>
+            ORTOGRAFICO
+        </jogo>
+        <lingua>
+            PT
+        </lingua>
+	</questao>
+	
+    <questao>
+        <question>
+            Com que letra se escreve a palavra: gesto? com: ó? Ou com: u?
+		</question>
+	    <answer>
+            gesto
+		</answer>
+	    <missingCharPos>
+            5
+		</missingCharPos>
+	    <dificuldade>
+            FACIL
+        </dificuldade>
+        <jogo>
+            ORTOGRAFICO
+        </jogo>
+        <lingua>
+            PT
+        </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	    	Com que letra se escreve a palavra: xingar? com: ch? Ou com: x?
+	    </question>
+	    <answer>
+	        xingar
+		</answer>
+		<missingCharPos>
+	    	1
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: casa? com: s? Ou com: z?
+	    </question>
+	    <answer>
+	        casa
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: baliza? com: s? Ou com: z?
+	    </question>
+	    <answer>
+	        baliza
+	    </answer>
+	    <missingCharPos>
+	        5
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>    
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: show? com: w? Ou com: u?
+	    </question>
+	    <answer>
+	        show
+	    </answer>
+	    <missingCharPos>
+	        4
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: empecilho? com: é? ou com: i?
+	    </question>
+	    <answer>
+	        empecilho
+	    </answer>
+	    <missingCharPos>
+	        1
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: natal? com: l? ou com: u?
+	    </question>
+	    <answer>
+	        natal
+	    </answer>
+	    <missingCharPos>
+	        5
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Com que letra se escreve a palavra: quadrado? Com: c? ou com: q?7
+		</question>
+		<answer>
+		    quadrado
+		</answer>
+		<missingCharPos>
+		    1
+		</missingCharPos>
+		<dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<!--  Questões de sinônimo nível fácil em pt  -->
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: residência
+	    </question>
+	    <answer>
+	        casa
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+		<dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o antônimo de: alto
+	    </question>
+	    <answer>
+	        baixo
+	    </answer>
+	    <missingCharPos>
+	        4
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>    
+	
+	<questao>
+	    <question>
+	        Qual é o antônimo de: bonito
+	    </question>
+	    <answer>
+	        feio
+	    </answer>
+	    <missingCharPos>
+	        4
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: verdadeiro
+	    </question>
+	    <answer>
+	        correto
+	    </answer>
+	    <missingCharPos>
+	        6
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: macio
+	    </question>
+	    <answer>
+	        fofo
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o antônimo de: forte
+	    </question>
+	    <answer>
+	        fraco
+	    </answer>
+	    <missingCharPos>
+	        2
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<!-- questões ortográficas nível fácil em en  -->
+	
+	<questao>
+	    <question>
+	        How to spell the word meet? With a? Or with e?
+	    </question>
+	    <answer>
+	        meet
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        How to spell the word hypocrite? With y? Or with i?
+	    </question>
+	    <answer>
+	        hypocrite
+	    </answer>
+	    <missingCharPos>
+	        2
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        How to spell the word jealous? With e? Or with a?
+	    </question>
+	    <answer>
+	        jealous
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	    	How to spell the word later? With a? Or with e?
+	    </question>
+	    <answer>
+	        later
+	    </answer>
+	    <missingCharPos>
+	        2
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<!-- Questões de sinônimos nível fácil em EN -->
+	
+	<questao>
+	    <question>
+	        Which the synonym to feeling alone?
+	    </question>
+	    <answer>
+	        leneliness
+	    </answer>
+	    <missingCharPos>
+	        7
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Which the synonym to know people?
+	    </question>
+	    <answer>
+	        meet
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>	
+	
+	<!-- Questões ortográficas nível fácil em ES -->
+	
+	<questao>
+	    <question>
+	    	Cuál letra si escribe la palabra: Energía? Con g? P con j?
+	    </question>
+	    <answer>
+	        energía
+	    </answer>
+	    <missingCharPos>
+	        5
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>    	
+	    	
+	<questao>
+	    <question>
+	        Cuál letra si escribe la palabra: dibujo? Con b? O con v?
+	    </question>
+	    <answer>
+	        dibujo
+	    </answer>
+	    <missingCharPos>
+	        3
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>	
+	
+	<questao>
+	    <question>
+	        Cuál letra si escribe la palabra: sobremesa? Con s? O con z?
+	    </question>
+	    <answer>
+	        sobremesa
+	    </answer>
+	    <missingCharPos>
+	        8
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Cuál letra si escribe la palabra: estrenar? Con s? O con x?
+	    </question>
+	    <answer>
+	        estrenar
+	    </answer>
+	    <missingCharPos>
+	        2
+	    </missingCharPos>
+	    <dificuldade>
+	        FACIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<!-- Questões ortográficas nível difícil em pt -->
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: joelho?
+	    </question>
+	    <answer>
+	        joelho
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+
+	<questao>
+	    <question>
+	        Como se escreve a palavra: gelo?
+	    </question>
+	    <answer>
+	        gelo
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>	 
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: facil?
+	    </question>
+	    <answer>
+	        fácil
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: louça?
+	    </question>
+	    <answer>
+	        louça
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: gesto?
+	    </question>
+	    <answer>
+	        gesto
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: xingar?
+	    </question>
+	    <answer>
+	        xingar
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: casa?
+	    </question>
+	    <answer>
+	        casa
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: baliza?
+	    </question>
+	    <answer>
+	        baliza
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: show?
+	    </question>
+	    <answer>
+	        show
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: empecilho?
+	    </question>
+	    <answer>
+	        empecilho
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>	
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: natal?
+	    </question>
+	    <answer>
+	        natal
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Como se escreve a palavra: quadrado?
+	    </question>
+	    <answer>
+	        quadrado
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<!-- Questões de sinônimo nível difícil em PT -->
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: residência?
+	    </question>
+	    <answer>
+	        casa
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	    	
+	<questao>
+	    <question>
+	        Qual é o antônimo de: alto?
+	    </question>
+	    <answer>
+	        baixo
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>	
+	
+	<questao>
+	    <question>
+	        Qual é o antônumo de: bonito?
+	    </question>
+	    <answer>
+	        feio
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: verdadeiro?
+	    </question>
+	    <answer>
+	        correto
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>	
+	
+	<questao>
+	    <question>
+	        Qual é o sinônimo de: macio?
+	    </question>
+	    <answer>
+	        fofo
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Qual é o antônimo de: forte?
+	    </question>
+	    <answer>
+	        fraco
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	PT
+	    </lingua>
+	</questao>
+	
+	<!-- Questões ortográficas nível difícil em ES -->
+	
+	<questao>
+	    <question>
+	        Cómo se escrebe la palabra: Energía?
+	    </question>
+	    <answer>
+	        Energía
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Cómo se escrebe la palabra: dibujo?
+	    </question>
+	    <answer>
+	        dibujo
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<questao>
+	 	<question>
+	 	    Cómo se escrebe la palabra: sobremesa?
+	 	</question>
+	 	<answer>
+	 	    sobremesa
+	 	</answer>
+	 	<missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Cómo se escrebe la palabra: estrenar?
+	    </question>
+	    <answer>
+	        estrenar
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	ES
+	    </lingua>
+	</questao>
+	
+	<!-- Questões ortográficas nível difícil em EN -->    
+	
+	<questao>
+	    <question>
+	        How to spell the word: meet?
+	    </question>
+	    <answer>
+	        meet
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	<questao>
+	    <question>
+	        How to spell the word hypocrite?
+	    </question>
+	    <answer>
+	        hypocrite
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>	
+	
+	<questao>
+	    <question>
+	        How to spell the word: jealous?
+	    </question>
+	    <answer>
+	        jealous
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        How to spell the word later?
+	    </question>
+	    <answer>
+	        later
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	ORTOGRAFICO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<!-- Questões sinônimo nível dificl em EN -->
+	
+	<questao>
+	    <question>
+	        Which the synonym to felling alone?
+	    </question>
+	    <answer>
+	        loneliness
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+	<questao>
+	    <question>
+	        Which the synonym to know people?
+	    </question>
+	    <answer>
+	        meet
+	    </answer>
+	    <missingCharPos>
+	        0
+	    </missingCharPos>
+	    <dificuldade>
+	        DIFICIL
+		</dificuldade>
+		<jogo>
+	    	SINONIMO
+	    </jogo>
+	    <lingua>
+	    	EN
+	    </lingua>
+	</questao>
+	
+</respostas>
+

@@ -1,0 +1,29 @@
+<resources>
+
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+	-->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+		-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	
+	<!-- Custom Style defined for the buttons. theme 1 -->
+	<style name="buttonTheme1" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+	<!-- Custom Style defined for the buttons. theme 2 -->
+	<style name="buttonTheme2" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_bluecontrast</item>
+    </style>
+</resources>

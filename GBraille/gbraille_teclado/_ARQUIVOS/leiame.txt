@@ -1,0 +1,17 @@
+- Corrigindo o problema de compilação unable to execute dex gc overhead limit exceeded
+
+
+Na pasta eclipse/eclipse.ini, alterar para:
+
+--launcher.XXMaxPermSize
+512M
+-showsplash
+com.android.ide.eclipse.adt.package.product
+--launcher.XXMaxPermSize
+512m
+--launcher.defaultAction
+openFile
+-vmargs
+-Dosgi.requiredJavaVersion=1.6
+-Xms512m
+-Xmx1024m

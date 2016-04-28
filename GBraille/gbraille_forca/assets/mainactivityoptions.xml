@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<menu>
+   <option>
+      <description>Jogo forca ortográfico</description>
+      <description_en>Game orthographic</description_en>
+      <description_es>Juego ortográfico</description_es>
+      <icon>@drawable/icon_orthographic</icon>      
+   </option>
+   
+   <option>
+      <description>Jogo forca sinônimo</description>
+      <description_en>Game synonymous</description_en>
+      <description_es>Juego horca sinónimo</description_es>
+      <icon>@drawable/icon_synonymous</icon>      
+   </option>
+   
+   <option>
+      <description>Opção em branco</description>
+      <description_en>Blank option</description_en>
+      <description_es>opción en blanco</description_es>
+      <icon>@drawable/icon_blank</icon>      
+   </option>
+   
+   
+   <option>
+      <description>Atualizar perguntas</description>
+      <description_en>upgrade questions</description_en>
+      <description_es>actualizar preguntas</description_es>
+      <icon>@drawable/icon_add_question_forca</icon>
+   </option>
+   
+   <option>
+      <description>Pontuação</description>
+      <description_en>Score</description_en>
+      <description_es>Pontuacción</description_es>
+      <icon>@drawable/icon_score</icon>      
+   </option>
+   
+   
+   
+   <option>
+      <description>Sair</description>
+      <description_en>Exit</description_en>
+      <description_es>Salir</description_es>
+      <icon>@drawable/icon_exit</icon>      
+   </option>
+</menu>

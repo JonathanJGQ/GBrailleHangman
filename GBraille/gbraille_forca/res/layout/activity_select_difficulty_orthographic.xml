@@ -1,0 +1,110 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/layoutSelectDifficulty"
+	android:clickable="true"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+    >
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    android:id="@+id/tableLayout"
+    android:clickable="true"
+	android:focusable="true"
+	android:focusableInTouchMode="true"    
+    >
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:text="1"                        
+            android:id="@+id/botao1"
+            android:nextFocusDown="@+id/botao2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"
+                                    
+        />
+
+        <ImageButton
+            android:text="2"            
+            android:id="@+id/botao4"
+            android:nextFocusDown="@+id/botao5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"            
+        />
+        
+    </TableRow>
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:text="1"            
+            android:id="@+id/botao2"
+            android:nextFocusDown="@+id/botao3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"            
+        />
+
+        <ImageButton
+            android:text="2"            
+            android:id="@+id/botao5"
+            android:nextFocusDown="@+id/botao6"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"            
+        />
+        
+    </TableRow>
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:text="1"
+            android:id="@+id/botao3"
+            android:nextFocusDown="@+id/botao4"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"            
+        />
+
+        <ImageButton
+            android:text="2"            
+            android:id="@+id/botao6"
+            android:nextFocusDown="@+id/botaoCancelar"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:background="@drawable/button"          
+         />        
+    </TableRow>    
+</TableLayout>    
+
+</LinearLayout>

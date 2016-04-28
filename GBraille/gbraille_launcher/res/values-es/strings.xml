@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">GBraille Launcher</string>
+	<string name="action_settings">Settings</string>
+	<string name="speakAplicacaoNaoInstalada">La aplicación no se encuentra instalada</string>
+	<string name="speakBemVindoApp">Bienvenido a G. braille</string>
+	<string name="speakErrorOpenApp">Error al abrir la aplicación.</string>
+	<string name="speakErrorAccessBrailleKeyboard">Error al abrir el teclado Braille.</string>	
+	<string name="speakAudioVolumeDecreased">El volumen del sonido ha bajado</string>
+	<string name="speakAudioVolumeIncreased">El volumen del sonido ha subido</string>
+	<string name="speakAudioVolumeMin">El volume del sonido está en el mínimo</string>
+	<string name="speakAudioVolumeMax">El volume del sonido está en el máximo</string>	
+	<string name="speakBatteryLevel">Nivel de la batería</string>
+	<string name="speakPercent">Porcento</string>	
+	<string name="speakJanuary">Enero</string>
+	<string name="speakFebruary">Febrero</string>
+	<string name="speakMarch">Marzo</string>
+	<string name="speakApril">Abril</string>
+	<string name="speakMay">Mayo</string>
+	<string name="speakJune">Junio</string>
+	<string name="speakJuly">Julio</string>
+	<string name="speakAugust">Agosto</string>
+	<string name="speakSeptember">Septiembre</string>
+	<string name="speakOctober">Octubre</string>
+	<string name="speakNovember">Noviembre</string>
+	<string name="speakDecember">Diciembre</string>	
+	<string name="speakSunday">Domingo</string>
+	<string name="speakMonday">Lunes</string>
+	<string name="speakTuesday">Martes</string>
+	<string name="speakWednesday">Miércoles</string>
+	<string name="speakThursday">Jueves</string>
+	<string name="speakFriday">Viernes</string>
+	<string name="speakSaturday">Sábado</string>	
+	<string name="speakHours">horas</string>
+	<string name="speakMinutes">minutos</string>
+	<string name="speakSeconds">segundos</string>
+</resources>

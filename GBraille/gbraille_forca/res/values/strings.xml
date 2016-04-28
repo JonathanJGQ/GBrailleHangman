@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Hello World!</string>
+    <string name="app_name">GBraille Hangman</string>
+    <string name="action_settings">Settings</string>
+    <string name="speakErrorAccessBrailleKeyboard">Errr accessing GBraille Keyboard</string>
+    
+    <string name="speakHeadWasDrawn">Head was drawn</string>
+    <string name="speakTummyWasDrawn">Belly was drawn</string>
+    <string name="speakLeftArmWasDrawn">Left arm was drawn</string>
+    <string name="speakRightArmWasDrawn">Right arm was drawn</string>
+    <string name="speakLeftLegWasDrawn">Left leg was drawn</string>
+    <string name="speakRightLegWasDrawn">Right leg was drawn</string>
+    
+    <string name="speakWriteALetter">Input a letter</string>
+    <string name="speakCongratulations">Congratulations: the word is</string>
+    <string name="speakAppName">Hangman</string>
+    <string name="speakGameOver">Game Over</string>
+    <string name="speakTryAgain">Try again!</string>
+    <string name="speakCongrats">Good! You got it!</string>
+    <string name="speakAttempt">Attempt</string>
+    <string name="speakAttempts">Attempts</string>
+    <string name="speakMissing">missing</string>
+    <string name="speakMissings">missing</string>
+    <string name="title_activity_exit">ExitActivity</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="cadastrarResposta">Insert answer</string>
+    <string name="sairButton">Exit</string>
+    <string name="txtViewResposta">Answer</string>
+    <string name="btnCadastrar">insert</string>
+    <string name="btnSair">Exit</string>
+    <string name="btnDadosExemplo">Example data</string>
+    <string name="textViewDificuldade">Difficulty</string>
+    <string name="textViewTypeLanguage">Language of the question</string>
+    
+    <string name="txtViewPergunta">Question</string>
+    <string name="txtViewLetraFaltaPos">Posição da letra que falta</string>
+    <string name="title_activity_cadastrar">CadastrarActivity</string>    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="speakBemVindoApp">Hangman</string>
+    <string name="speakErrorOpenApp">Error opening application</string>
+    <string name="speakAplicacaoNaoInstalada">The application is not installed</string>
+    <string name="title_activity_excluir_pergunta">ExcluirPerguntaActivity</string>
+    
+    <string name="EasyLevel">Easy</string>
+    <string name="HardLevel">Hard</string>
+    <string name="txtEasyLevel">Easy game</string>
+    <string name="txtHardLevel">Hard level</string>
+    
+    <!-- ExcluirPerguntaActivity -->
+    <string name="txtConfirmacao">Confirm</string>
+    <string name="txtConfirmarExclusaoPergunta">Are you sure deleting this question?</string>
+    <string name="txtSim">Yes</string>
+    <string name="txtNao">No</string>
+	<string name="txtPerguntaExcluidaSucesso">Question deleted successfully</string>
+	<string name="txtErroExcluirPergunta">Error deleting question</string>
+	
+	<string name="speakAudioVolumeDecreased">Audio volume was decreased</string>
+	<string name="speakAudioVolumeIncreased">Audio volume was increased</string>
+	<string name="speakAudioVolumeMin">Audio volume is at minimum</string>
+	<string name="speakAudioVolumeMax">Audio volume is at maximum</string>
+	
+	<string name="txtNoQuestionsEasyLevel">There is no question in Easy Game.</string>
+	<string name="txtNoQuestionsHardLevel">There is no question in Hard Game.</string>
+	<string name="txtPointsEasyLevel">points on easy game</string>
+	<string name="txtPointsHardLevel">points on hard game</string>
+	<string name="title_activity_select_difficulty">Select the difficulty</string>
+	<string name="type_of_the_game">Type of the game</string>
+	<string name="title_update_question_activity">Update questions</string>
+	
+</resources>

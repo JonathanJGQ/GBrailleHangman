@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gbraille.forca"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+    
+    <supports-screens android:smallScreens="false" 
+          android:normalScreens="true" 
+          android:largeScreens="true"
+          android:xlargeScreens="true"
+          android:anyDensity="true" />
+    
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.gbraille.forca.activity.PlayGameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.ExitActivity"
+            android:label="@string/title_activity_exit" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.CadastroActivity"
+            android:label="@string/title_activity_cadastro" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.InsertQuestionActivity"
+            android:label="@string/title_activity_cadastrar" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.MainScreenActivity"
+            android:alwaysRetainTaskState="false"
+            android:clearTaskOnLaunch="true"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.DeleteQuestionActivity"
+            android:label="@string/title_activity_excluir_pergunta" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.SelectDifficultyOrthographic"
+            android:label="@string/title_activity_select_difficulty" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.SelectDifficultySynonymous"
+            android:label="@string/title_activity_select_difficulty" >
+        </activity>
+        <activity 
+            android:name="com.gbraille.forca.activity.UpdateQuestion"
+            android:label="@string/title_update_question_activity" >
+		</activity>
+    </application>
+
+</manifest>

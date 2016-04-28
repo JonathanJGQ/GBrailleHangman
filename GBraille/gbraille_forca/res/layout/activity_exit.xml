@@ -1,0 +1,37 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layoutExitActivity"
+    android:clickable="true"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+    >
+
+    <ImageButton
+        android:text="@string/txtSim"        
+        android:tag="@string/txtSim"
+        android:src="@drawable/icon_yes"
+        android:id="@+id/botaoSim"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:background="@drawable/button"
+    />
+
+    <ImageButton
+        android:text="@string/txtNao"
+        android:tag="@string/txtNao"
+        android:src="@drawable/icon_no"
+        android:id="@+id/botaoNao"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"  
+        android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:background="@drawable/button"
+    />
+</LinearLayout>

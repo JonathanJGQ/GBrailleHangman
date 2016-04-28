@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:fillViewport="true"
+    android:orientation="horizontal"
+    android:padding="0px"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- LINE: PERGUNTA -->
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/textViewPergunta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtViewPergunta"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/txtPergunta"
+                android:ems="10"
+                android:maxLength="20"
+                android:singleLine="True" />
+        </TableRow>
+
+        <!-- LINE: RESPOSTA -->
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/textViewResposta"
+                android:text="@string/txtViewResposta"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/txtResposta"
+                android:ems="10"
+                android:maxLength="20"
+                android:singleLine="True" />
+        </TableRow>
+
+        <!-- LINE: DIFICULDADE -->
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/textViewDifculdade"
+                android:text="@string/textViewDificuldade"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Spinner
+                android:id="@+id/spinnerDificuldade"
+                android:layout_width="fill_parent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tipoDeJogo"
+                android:text="@string/type_of_the_game"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Spinner
+                android:id="@+id/spinnerTypeGame"
+                android:layout_width="fill_parent"
+                tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+            
+            <TextView
+                android:id="@+id/textViewLanguage"
+                android:text="@string/textViewTypeLanguage"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                />
+            
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+            
+            <Spinner 
+                android:id="@+id/spinnerTypeLanguage"
+                android:layout_width="fill_parent"
+                tools:listitem = "@android:layout/simple_spinner_dropdown_item" />
+            
+        </TableRow>
+
+        <!-- LINE: LETRA QUE FALTA -->
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/textViewLetraFaltaPos"
+                android:text="@string/txtViewLetraFaltaPos"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/txtLetraFaltaPos"
+                android:digits="123456789"
+                android:ems="10"
+                android:maxLength="20"
+                android:numeric="integer"
+                android:singleLine="True" />
+        </TableRow>
+
+        <!-- LINE: BOTOES -->
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/cadastrar_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/btnCadastrar"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/sair_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:text="@string/btnSair"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

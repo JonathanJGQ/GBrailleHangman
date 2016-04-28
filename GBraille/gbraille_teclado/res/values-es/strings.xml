@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Teclado GBraille</string>
+	<string name="action_settings">Settings</string>
+	<string name="speakUmaLetraMaiuscula">Una letra minúscula</string>
+	<string name="speakTranslineacao">Translineassão</string>
+	<string name="speakTodasAsLetrasMaiusculas">Todas las letras mayúsculas</string>
+	<string name="speakNumero">Número</string>
+	<string name="speakRestituidor">Restituidor</string>
+	<string name="speakBeginningOfTheText">Inicio</string>
+	<string name="speakEndOfTheText">Fin</string>
+	<string name="speakDeleted">Borrado</string>
+	<string name="speakNothingToDelete">Nada para borrar</string>
+	<string name="speakSymbolNotFound">El símbolo no fue encontrado</string>
+	<string name="speakGBrailleKeyboard">Teclado Gê braile</string>
+	<string name="speakDeletingInputError">Borrando error de entrada</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<menu>
+   <app>
+      <description>Bateria</description>
+      <description_en>battery</description_en>
+      <description_es>Batería</description_es>
+      <icon>@drawable/icon_bateria</icon>
+      <icon_bluecontrast>@drawable/icon_bateria_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>batteryLevel</function>
+   </app>
+   
+   <app>
+      <description>Data e Hora</description>
+      <description_en>date and time</description_en>
+      <description_es>Data y Hora</description_es>
+      <icon>@drawable/icon_datahora</icon>
+      <icon_bluecontrast>@drawable/icon_datahora_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>dateTime</function>
+   </app>
+   
+   <app>
+      <description>Tema Azul</description>
+      <description_en>Blue Theme</description_en>
+      <description_es>Tema azul</description_es>
+      <icon>@drawable/icon_tema_azul</icon>
+      <icon_bluecontrast>@drawable/icon_tema_azul_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>changeThemeBlueContrast</function>
+   </app>
+   
+   <app>
+      <description>Tema Padrão</description>
+      <description_en>Default Theme</description_en>
+      <description_es>Tema estándar</description_es>
+      <icon>@drawable/icon_tema_normal</icon>
+      <icon_bluecontrast>@drawable/icon_tema_normal_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>changeThemeNormal</function>
+   </app>
+   
+   <app>
+      <description>Opção não definida</description>
+      <description_en>Empty Option</description_en>
+      <description_es>Opción no definida</description_es>
+      <icon>@drawable/icon_empty</icon>
+      <icon_bluecontrast>@drawable/icon_empty</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>-</function>
+   </app>
+   
+   <app>
+      <description>próxima tela</description>
+      <description_en>Next Screen</description_en>
+      <description_es>la pantalla siguiente</description_es>
+      <icon>@drawable/icon_avancar</icon>
+      <icon_bluecontrast>@drawable/icon_avancar_white</icon_bluecontrast>
+      <package>-</package>
+      <activity>-</activity>
+      <type>widget</type>
+      <function>nextScreen</function>
+   </app>
+</menu>
