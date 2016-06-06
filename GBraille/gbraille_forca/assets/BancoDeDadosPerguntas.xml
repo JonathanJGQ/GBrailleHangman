@@ -7,7 +7,7 @@
     
     <questao>
         <question>
-        Com que letra se escreve a palavra: joelho? com g? Ou com j?
+			Com que letra se escreve a palavra: joelho? com g? Ou com j?
         </question>
         <answer>
             joelho
@@ -16,13 +16,13 @@
             1
         </missingCharPos>
         <dificuldade>
-            FACIL
+            1
         </dificuldade>
         <jogo>
-            ORTOGRAFICO
+            1
         </jogo>
         <lingua>
-            PT
+            1
         </lingua>
     </questao>
     
@@ -37,13 +37,13 @@
             1
         </missingCharPos>
         <dificuldade>
-            FACIL
+            1
         </dificuldade>
         <jogo>
-            ORTOGRAFICO
+            1
         </jogo>
         <lingua>
-            PT
+            1
         </lingua>
     </questao>
     
@@ -58,13 +58,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-            FACIL
+            1
         </dificuldade>
         <jogo>
-            ORTOGRAFICO
+            1
         </jogo>
         <lingua>
-            PT
+            1
         </lingua>
 	</questao>
 	
@@ -79,13 +79,13 @@
 			4
 		</missingCharPos>
 		<dificuldade>
-            FACIL
+            1
         </dificuldade>
         <jogo>
-            ORTOGRAFICO
+            1
         </jogo>
         <lingua>
-            PT
+            1
         </lingua>
 	</questao>
 	
@@ -100,13 +100,13 @@
             5
 		</missingCharPos>
 	    <dificuldade>
-            FACIL
+            1
         </dificuldade>
         <jogo>
-            ORTOGRAFICO
+            1
         </jogo>
         <lingua>
-            PT
+            1
         </lingua>
 	</questao>
 	
@@ -121,13 +121,13 @@
 	    	1
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -142,13 +142,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -163,13 +163,13 @@
 	        5
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>    
 	
@@ -184,13 +184,13 @@
 	        4
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -205,13 +205,13 @@
 	        1
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -226,13 +226,13 @@
 	        5
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -247,13 +247,13 @@
 		    1
 		</missingCharPos>
 		<dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -270,13 +270,13 @@
 	        3
 	    </missingCharPos>
 		<dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -291,13 +291,13 @@
 	        4
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>    
 	
@@ -312,13 +312,13 @@
 	        4
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -333,13 +333,13 @@
 	        6
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -354,13 +354,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -375,13 +375,13 @@
 	        2
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -398,13 +398,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -419,13 +419,13 @@
 	        2
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -440,13 +440,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -461,17 +461,17 @@
 	        2
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
-	<!-- Questões de sinônimos nível fácil em EN -->
+	<!-- Questões de sinônimos nível fácil em 3 -->
 	
 	<questao>
 	    <question>
@@ -484,13 +484,13 @@
 	        7
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -505,17 +505,17 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>	
 	
-	<!-- Questões ortográficas nível fácil em ES -->
+	<!-- Questões ortográficas nível fácil em 2 -->
 	
 	<questao>
 	    <question>
@@ -528,13 +528,13 @@
 	        5
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>    	
 	    	
@@ -549,13 +549,13 @@
 	        3
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>	
 	
@@ -570,13 +570,13 @@
 	        8
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
@@ -591,13 +591,13 @@
 	        2
 	    </missingCharPos>
 	    <dificuldade>
-	        FACIL
+	        1
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
@@ -614,13 +614,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 
@@ -635,13 +635,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>	 
 	
@@ -656,13 +656,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -677,13 +677,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -698,13 +698,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -719,13 +719,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -740,13 +740,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -761,13 +761,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -782,13 +782,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -803,13 +803,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>	
 	
@@ -824,13 +824,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -845,17 +845,17 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
-	<!-- Questões de sinônimo nível difícil em PT -->
+	<!-- Questões de sinônimo nível difícil em 1 -->
 	
 	<questao>
 	    <question>
@@ -868,13 +868,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	    	
@@ -889,13 +889,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>	
 	
@@ -910,13 +910,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -931,13 +931,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>	
 	
@@ -952,13 +952,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
@@ -973,17 +973,17 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	PT
+	    	1
 	    </lingua>
 	</questao>
 	
-	<!-- Questões ortográficas nível difícil em ES -->
+	<!-- Questões ortográficas nível difícil em 2 -->
 	
 	<questao>
 	    <question>
@@ -996,13 +996,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
@@ -1017,13 +1017,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
@@ -1038,13 +1038,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
@@ -1059,17 +1059,17 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	ES
+	    	2
 	    </lingua>
 	</questao>
 	
-	<!-- Questões ortográficas nível difícil em EN -->    
+	<!-- Questões ortográficas nível difícil em 3 -->    
 	
 	<questao>
 	    <question>
@@ -1082,13 +1082,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	<questao>
@@ -1102,13 +1102,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>	
 	
@@ -1123,13 +1123,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -1144,17 +1144,17 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	ORTOGRAFICO
+	    	1
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
-	<!-- Questões sinônimo nível dificl em EN -->
+	<!-- Questões sinônimo nível dificl em 3 -->
 	
 	<questao>
 	    <question>
@@ -1167,13 +1167,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	
@@ -1188,13 +1188,13 @@
 	        0
 	    </missingCharPos>
 	    <dificuldade>
-	        DIFICIL
+	        2
 		</dificuldade>
 		<jogo>
-	    	SINONIMO
+	    	2
 	    </jogo>
 	    <lingua>
-	    	EN
+	    	3
 	    </lingua>
 	</questao>
 	

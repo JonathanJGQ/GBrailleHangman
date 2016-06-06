@@ -26,6 +26,8 @@ public class ExitActivity extends AccessibleAbstractActivityLinearTemplate {
 			public void onClick(View v) {
 				Intent i = new Intent(getActivity(), MainScreenActivity.class);
 				startActivity(i);
+				MainFunctions.selectedOption = 1;
+				destroyServices();
 				finish();
 			}
 		});
@@ -67,7 +69,7 @@ public class ExitActivity extends AccessibleAbstractActivityLinearTemplate {
 		} else if (systemLanguage.equals(en)) {
 			screenName = "Did you wish get out? Choose: Yes or no.";
 		} else {
-			screenName = "Usted dejar de fumar? Elija sí o no.";
+			screenName = "Quieres dejar? Elija sí o no.";
 		}
 		super.onCreate(savedInstanceState);
 	}

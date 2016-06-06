@@ -27,12 +27,14 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
 	
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:name="com.gbraille.forca.controller.AppController" >
         <activity
             android:name="com.gbraille.forca.activity.PlayGameActivity"
             android:label="@string/app_name"
@@ -79,6 +81,12 @@
             android:name="com.gbraille.forca.activity.UpdateQuestion"
             android:label="@string/title_update_question_activity" >
 		</activity>
+        <activity
+            android:name=".controller.BaixaJson" >
+        </activity>
+        
+        
+        
     </application>
 
 </manifest>

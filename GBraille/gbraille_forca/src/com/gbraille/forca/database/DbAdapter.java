@@ -18,7 +18,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 public class DbAdapter {
-	private SQLiteDatabase db;
+	private static SQLiteDatabase db;
 	private DbHelper helper;
 	String TAG = "DBAdapter";
 	Context ctx;
@@ -121,7 +121,7 @@ public class DbAdapter {
 	
 	/* question functions */
 	
-	public long insertQuestion(String pergunta, String resposta, String letraFaltaPos, int dificuldade, int jogo, int linguagem){
+	public static void insertQuestion(String pergunta, String resposta, String letraFaltaPos, int dificuldade, int jogo, int linguagem){
 		ContentValues values = new ContentValues();
 		values.put(DbHelper.COLUMN_PERGUNTA, pergunta);
 		values.put(DbHelper.COLUMN_RESPOSTA, resposta);		
@@ -131,7 +131,7 @@ public class DbAdapter {
 		values.put(DbHelper.COLUMN_TIPO_LINGUAGEM, linguagem);
 		values.put(DbHelper.COLUMN_ACESSADO, "N");
 		
-		return db.insert(DbHelper.TABLE_RESPOSTAS, null, values);
+		db.insert(DbHelper.TABLE_RESPOSTAS, null, values);
 	}
 	
 	public void deleteQuestion(int id){
@@ -211,7 +211,9 @@ public class DbAdapter {
 	}
 	
 	public Cursor getARandomUnplayedQuestion(int dificulty, int tipo, int lingua){
-		return db.rawQuery("SELECT " + DbHelper.COLUMN_ID + "," 
+		
+		
+		Cursor c = db.rawQuery("SELECT " + DbHelper.COLUMN_ID + "," 
 	        + DbHelper.COLUMN_PERGUNTA + "," 
 			+ DbHelper.COLUMN_RESPOSTA + "," 
 			+ DbHelper.COLUMN_LETRA_FALTA_POS + ","
@@ -222,6 +224,22 @@ public class DbAdapter {
 			+ " AND " + DbHelper.COLUMN_TIPO_JOGO + " = " + tipo
 			+ " AND " + DbHelper.COLUMN_TIPO_LINGUAGEM + " = " + lingua
 			+ " ORDER BY random() LIMIT 1", null);
+		
+		/*Cursor c = db.rawQuery("SELECT * "
+				+ " FROM " + DbHelper.TABLE_RESPOSTAS
+				+ " WHERE " + DbHelper.COLUMN_TIPO_LINGUAGEM + " = " + lingua
+				+ " ORDER BY random()", null);
+		
+		while (c.moveToNext()) {  
+		      
+		      c.getString(c.getColumnIndex("pergunta"));
+		      c.getString(c.getColumnIndex("resposta"));
+		      c.getString(c.getColumnIndex("acessado"));
+		      c.getString(c.getColumnIndex("tipodelinguagem"));
+		      
+		   }  */
+		
+		return c;
 	}
 	
 	/* Criação do Spinner para preencher o activity */

@@ -179,6 +179,7 @@ public class InsertQuestionActivity extends ListActivity {
 	    
 	    SpinnerClass spo2 = (SpinnerClass) spinnerTypeLanguage.getSelectedItem();
 	    int lingua = spo2.getId();
+	    /*
 	    
 	    // Save the new comment to the database	    
 	    long id;
@@ -189,13 +190,16 @@ public class InsertQuestionActivity extends ListActivity {
 	    }
 	    else{
 	    	Toast.makeText(getApplicationContext(), "FALHA AO CADASTRAR O REGISTRO", Toast.LENGTH_LONG).show();
-	    }
-	    
+	    }  
 	    txtQuestion.setText("");
 	    txtAnswer.setText("");
 	    txtMissingCharPos.setText("");
 	    txtAnswer.requestFocus();
+	    */
 	}
+	
+	
+	
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub

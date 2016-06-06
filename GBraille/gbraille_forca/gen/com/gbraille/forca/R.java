@@ -50,7 +50,8 @@ public final class R {
         public static final int tummy=0x7f020015;
     }
     public static final class id {
-        public static final int action_settings=0x7f090036;
+        public static final int action_settings=0x7f090043;
+        public static final int answer=0x7f090038;
         public static final int botao1=0x7f090023;
         public static final int botao2=0x7f090024;
         public static final int botao3=0x7f090027;
@@ -60,17 +61,28 @@ public final class R {
         public static final int botaoCancelar=0x7f090029;
         public static final int botaoNao=0x7f090020;
         public static final int botaoSim=0x7f09001f;
+        public static final int btnArrayRequest=0x7f09002b;
+        public static final int btnObjRequest=0x7f09002a;
         public static final int cadastrar_button=0x7f090019;
-        public static final int head=0x7f09002b;
-        public static final int imageView1=0x7f090034;
-        public static final int info=0x7f090032;
+        public static final int cost_label=0x7f090042;
+        public static final int description_label=0x7f090041;
+        public static final int dificuldade=0x7f09003a;
+        public static final int head=0x7f09002e;
+        public static final int imageView1=0x7f09003e;
+        public static final int info=0x7f090035;
+        public static final int jogo=0x7f09003b;
         public static final int layoutExitActivity=0x7f09001e;
         public static final int layoutMainActivity=0x7f090021;
-        public static final int layoutSelectDifficulty=0x7f090031;
-        public static final int lefthand=0x7f09002e;
-        public static final int leftleg=0x7f090030;
-        public static final int righthand=0x7f09002d;
-        public static final int rightleg=0x7f09002f;
+        public static final int layoutSelectDifficulty=0x7f090034;
+        public static final int lefthand=0x7f090031;
+        public static final int leftleg=0x7f090033;
+        public static final int lingua=0x7f09003c;
+        public static final int missingCharPos=0x7f090039;
+        public static final int name_label=0x7f090040;
+        public static final int questao=0x7f090036;
+        public static final int question=0x7f090037;
+        public static final int righthand=0x7f090030;
+        public static final int rightleg=0x7f090032;
         public static final int sair_button=0x7f09001b;
         public static final int spinnerDificuldade=0x7f09000b;
         public static final int spinnerTypeGame=0x7f09000f;
@@ -92,18 +104,19 @@ public final class R {
         public static final int tableRow7=0x7f09000c;
         public static final int tableRow8=0x7f09000e;
         public static final int tableRow9=0x7f090010;
-        public static final int textView1=0x7f090033;
-        public static final int textView2=0x7f090035;
+        public static final int textView1=0x7f09003d;
+        public static final int textView2=0x7f09003f;
         public static final int textViewDifculdade=0x7f090009;
         public static final int textViewLanguage=0x7f090011;
         public static final int textViewLetraFaltaPos=0x7f090015;
         public static final int textViewPergunta=0x7f090001;
         public static final int textViewResposta=0x7f090005;
         public static final int tipoDeJogo=0x7f09000d;
-        public static final int tummy=0x7f09002c;
+        public static final int tummy=0x7f09002f;
         public static final int txtLetraFaltaPos=0x7f090017;
         public static final int txtPergunta=0x7f090003;
-        public static final int txtQuestion=0x7f09002a;
+        public static final int txtQuestion=0x7f09002d;
+        public static final int txtResponse=0x7f09002c;
         public static final int txtResposta=0x7f090007;
     }
     public static final class layout {
@@ -111,11 +124,16 @@ public final class R {
         public static final int activity_excluir_pergunta=0x7f030001;
         public static final int activity_exit=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int activity_playgame=0x7f030004;
-        public static final int activity_select_difficulty_orthographic=0x7f030005;
-        public static final int activity_select_difficulty_synonymous=0x7f030006;
-        public static final int activity_update_question=0x7f030007;
-        public static final int listitem=0x7f030008;
+        public static final int activity_main_app=0x7f030004;
+        public static final int activity_options=0x7f030005;
+        public static final int activity_playgame=0x7f030006;
+        public static final int activity_select_difficulty_orthographic=0x7f030007;
+        public static final int activity_select_difficulty_synonymous=0x7f030008;
+        public static final int activity_update_question=0x7f030009;
+        public static final int list_item=0x7f03000a;
+        public static final int listitem=0x7f03000b;
+        public static final int main=0x7f03000c;
+        public static final int single_list_item=0x7f03000d;
     }
     public static final class menu {
         public static final int cadastrar=0x7f080000;

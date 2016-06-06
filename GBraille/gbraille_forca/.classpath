@@ -5,9 +5,9 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/gbraille_class_library"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/gbraille_teclado"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jre8/lib/jaxb-ri/lib/jaxb-api.jar"/>
 	<classpathentry kind="lib" path="libs/xstream-1.4.7/lib/xstream-1.4.7.jar"/>
 	<classpathentry kind="lib" path="libs/milyn-smooks-all-1.4.1.jar"/>
+	<classpathentry kind="lib" path="libs/volley.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

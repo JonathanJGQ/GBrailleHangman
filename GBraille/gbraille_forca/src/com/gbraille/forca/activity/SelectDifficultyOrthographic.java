@@ -1,15 +1,12 @@
 package com.gbraille.forca.activity;
 
 import java.util.Locale;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import com.gbraille.forca.LanguageClass.TipoLanguage;
 import com.gbraille.forca.MainFunctions;
 import com.gbraille.forca.R;
@@ -18,8 +15,9 @@ import com.gbraille.forca.DifficultyClass.DifficultyLevel;
 import com.gbraille.forca.TipoClass.TipoLevel;
 import com.gbraille.forca.database.DbAdapter;
 import com.gbraille.libraries.LogMessages;
-
+import com.gbraille.forca.controller.BaixaJson;
 import de.akquinet.android.androlog.Log;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -33,6 +31,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
+
+@SuppressLint("NewApi")
 public class SelectDifficultyOrthographic extends AccessibleAbstractActivityBrailleTemplate {
 
 	DbAdapter dbAdapter;
@@ -46,24 +46,15 @@ public class SelectDifficultyOrthographic extends AccessibleAbstractActivityBrai
 		fillScreenOptionsFromXMLFile("selectdifficulty.xml","option");
 		dbAdapter = new DbAdapter(this.getApplicationContext());
 		
-		
 		if (dbAdapter.getInstalacao().equals("N")){			
 			try{
-				
-				insertSampleDataEasyMode();
+				BaixaJson.makeJsonArrayRequest();
 			}
 			catch (Exception ex){
-	            Toast.makeText(this, "Problems inserting questions in easy mode", Toast.LENGTH_LONG).show();
+	            Toast.makeText(this, "Problems inserting questions", Toast.LENGTH_LONG).show();
 	        }
-			
-			try{
-				insertSampleDataHardMode();
-			}
-			catch (Exception ex){
-	            Toast.makeText(this, "Problems inserting questions in hard mode", Toast.LENGTH_LONG).show();
 	        }					
 			dbAdapter.updateInstalacao("S");
-		}
 		
 		dbAdapter.setAllQuestionsToUnplayed();
 	}
@@ -76,403 +67,7 @@ public class SelectDifficultyOrthographic extends AccessibleAbstractActivityBrai
 		finish();
 		
 	}
-	
-	public void insertSampleDataEasyMode() {
-		String question = "";
-	    String answer = "";
-	    String missingCharPos = "";
-	    
-	    if (systemLanguage.equalsIgnoreCase("pt")){
-	    	question = "Com que letra se escreve a palavra: joelho? com g? Ou com j?";
-	    	answer = "joelho";
-	    	missingCharPos = "1";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: gelo? Com g? Ou com j?";
-	    	answer = "gelo";
-	    	missingCharPos = "1";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: fácil? Com s? Ou com c?";
-	    	answer = "fácil";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: louça? com cedilha? Ou com c?";
-	    	answer = "louça";
-	    	missingCharPos = "4";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	    
-	    	question = "Com que letra se escreve a palavra: gesto? com: ó? Ou com: u?";
-	    	answer = "gesto";
-	    	missingCharPos = "5";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: xingar? com: ch? Ou com: x?";
-	    	answer = "xingar";
-	    	missingCharPos = "1";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: casa? com: s? Ou com: z?";
-	    	answer = "casa";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: baliza? com: s? Ou com: z?";
-	    	answer = "baliza";
-	    	missingCharPos = "5";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	    
-	    	question = "Com que letra se escreve a palavra: show? com: w? Ou com: u?";
-	    	answer = "show";
-	    	missingCharPos = "4";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: empecilho? com: é? Ou com: i?";
-	    	answer = "empecilho";
-	    	missingCharPos = "1";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: natal? com: l? Ou com: u?";
-	    	answer = "natal";
-	    	missingCharPos = "5";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Com que letra se escreve a palavra: quadrado? com: c? Ou com: q?";
-	    	answer = "quadrado";
-	    	missingCharPos = "1";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	/* Questões de sinônimo nível fácil*/
 
-	    	question = "Qual é o sinônimo de: residência";
-	    	answer = "casa";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: alto";
-	    	answer = "baixo";
-	    	missingCharPos = "4";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: bonito";
-	    	answer = "feio";
-	    	missingCharPos = "4";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o sinônimo de: verdadeiro";
-	    	answer = "correto";
-	    	missingCharPos = "6";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o sinônimo de: macio";
-	    	answer = "fofo";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: forte";
-	    	answer = "fraco";
-	    	missingCharPos = "2";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	
-	    	Toast.makeText(getApplicationContext(), "REGISTRO CADASTRADO COM SUCESSO", Toast.LENGTH_LONG).show();
-	    }
-	    else if (systemLanguage.equalsIgnoreCase("en")){
-	    	
-	    	/*Ortográfico*/
-	    	
-	    	question = "How to spell the word meet? With a? Or whith e?";
-	    	answer = "meet";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word hypocrite? With y? Or with i?";
-	    	answer = "hypocrite";
-	    	missingCharPos = "2";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word jealous? With e? Or with a?";
-	    	answer = "jealous";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word later? With a? Or with e?";
-	    	answer = "later";
-	    	missingCharPos = "2";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	/*Sinônimos*/
-	    	
-	    	question = "Which the synonym to felling alone?";
-	    	answer = "loneliness";
-	    	missingCharPos = "7";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	
-	    	
-	    	question = "which the synonym to know people?";
-	    	answer = "meet";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	
-	    }
-	    else if (systemLanguage.equalsIgnoreCase("es")){
-	    	
-	    	question = "Cuál letra si escribe la palabra: Energía? Con g? O con j?";
-	    	answer = "energía";
-	    	missingCharPos = "5";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cuál letra si escribe la palabra: dibujo? Con b? O con v?";
-	    	answer = "dibujo";
-	    	missingCharPos = "3";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cuál letra si escribe la palabra: sobremesa? Con s? O con z?";
-	    	answer = "sobremesa";
-	    	missingCharPos = "8";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cuál letra si escribe la palabra: estrenar? Con s? O con x?";
-	    	answer = "estrenar";
-	    	missingCharPos = "2";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.FACIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-
-	    }
-	}
-	
-	public void insertSampleDataHardMode() {
-		String question = "";
-	    String answer = "";
-	    String missingCharPos = "";
-	    
-	    
-	    if (systemLanguage.equalsIgnoreCase("pt")){
-	    	
-	    	/*Questões ortográficas nível difícil*/
-	    	
-	    	question = "Como se escreve a palavra: joelho?";
-	    	answer = "joelho";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: gelo?";
-	    	answer = "gelo";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: fácil?";
-	    	answer = "fácil";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: louça?";
-	    	answer = "louça";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	    
-	    	question = "Como se escreve a palavra: gesto?";
-	    	answer = "gesto";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: xingar?";
-	    	answer = "xingar";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: casa?";
-	    	answer = "casa";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: baliza?";
-	    	answer = "baliza";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	    
-	    	question = "Como se escreve a palavra: show?";
-	    	answer = "show";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: empecilho?";
-	    	answer = "empecilho";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: natal?";
-	    	answer = "natal";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Como se escreve a palavra: quadrado?";
-	    	answer = "quadrado";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	/*Questões de sinônimo nível difícil*/
-	    	
-	    	question = "Qual é o sinônimo de: residência";
-	    	answer = "casa";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: alto";
-	    	answer = "baixo";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: bonito";
-	    	answer = "feio";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o sinônimo de: verdadeiro";
-	    	answer = "correto";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o sinônimo de: macio";
-	    	answer = "fofo";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    
-	    	question = "Qual é o antônimo de: forte";
-	    	answer = "fraco";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.PT.getValue());
-	    	
-	    	
-	    	
-	    	Toast.makeText(getApplicationContext(), "REGISTRO CADASTRADO COM SUCESSO", Toast.LENGTH_LONG).show();
-	    
-	    }else if (systemLanguage.equalsIgnoreCase("es")){
-	    	
-	    	/*Questões ortográficas nível difícil*/
-	    	
-	    	question = "Cómo se escrebe la palabra: Energía?";
-	    	answer = "energía";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cómo se escrebe la palabra: dibujo?";
-	    	answer = "dibujo";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cómo se escrebe la palabra: sobremesa?";
-	    	answer = "sobremesa";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    	
-	    	question = "Cómo se escrebe la palabra: estrenar?";
-	    	answer = "estrenar";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.ES.getValue());
-	    
-	    	
-	    	}
-	    else if (systemLanguage.equalsIgnoreCase("en")){
-	    	/*Ortográficos*/
-	    	
-	    	question = "How to spell the word meet?";
-	    	answer = "meet";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word hypocrite?";
-	    	answer = "hypocrite";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word jealous?";
-	    	answer = "jealous";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "How to spell the word later?";
-	    	answer = "later";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.ORTOGRAFICO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	/*Sinônimos*/
-	    	
-	    	question = "Which the synonym to felling alone?";
-	    	answer = "loneliness";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(), TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	question = "which the synonym to know people?";
-	    	answer = "meet";
-	    	missingCharPos = "0";
-	    	dbAdapter.insertQuestion(question, answer, missingCharPos, DifficultyLevel.DIFICIL.getValue(),TipoLevel.SINONIMO.getValue(),
-	    			TipoLanguage.EN.getValue());
-	    	
-	    	Toast.makeText(getApplicationContext(), "REGISTRATION REGISTERED WITH SUCCESS", Toast.LENGTH_LONG).show();
-	    }
-
-	}
-
-	
-    
-    
 	@Override
 	protected LinearLayout getLayout() {
 		// TODO Auto-generated method stub
@@ -525,12 +120,12 @@ public class SelectDifficultyOrthographic extends AccessibleAbstractActivityBrai
 					MainFunctions.dificultyLevel = DifficultyLevel.FACIL.getValue();
 					MainFunctions.tipoLevel = TipoLevel.ORTOGRAFICO.getValue();
 					
-					if (Locale.getDefault().getLanguage() == "pt") {
+					if (Locale.getDefault().getLanguage().toString().equals("pt")) {
 			   			 MainFunctions.tipolingua = 1;
-			   		} else if (Locale.getDefault().getLanguage() == "es") {
+			   		} else if (Locale.getDefault().getLanguage().toString().equals("es")) {
 			   			MainFunctions.tipolingua = 2;
-			   		} else if (Locale.getDefault().getLanguage() == "en") {
-			   			MainFunctions.tipolingua = 2;
+			   		} else if (Locale.getDefault().getLanguage().toString().equals("en")) {
+			   			MainFunctions.tipolingua = 3;
 			   		}
 					
 					Intent i = new Intent(getActivity(), PlayGameActivity.class);
@@ -632,6 +227,7 @@ public class SelectDifficultyOrthographic extends AccessibleAbstractActivityBrai
 	}
 	
 
+	@SuppressLint("NewApi")
 	@Override
 	protected void setTts() {
 		// TODO Auto-generated method stub

@@ -1,6 +1,7 @@
 package com.gbraille.forca.activity;
 
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -13,21 +14,26 @@ import org.w3c.dom.NodeList;
 import com.gbraille.forca.MainFunctions;
 import com.gbraille.forca.R;
 import com.gbraille.forca.DifficultyClass.DifficultyLevel;
+import com.gbraille.forca.controller.BaixaJson;
 import com.gbraille.forca.database.DbAdapter;
 import com.gbraille.libraries.LogMessages;
 
 import de.akquinet.android.androlog.Log;
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.UtteranceProgressListener;
+import android.util.Patterns;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import com.gbraille.forca.controller.BaixaJson;
 
 public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplate {
     DbAdapter dbAdapter;
@@ -65,9 +71,16 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
-				int hardModeScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
-				speakWords(myTTS,easyModeScore + " " + getString(R.string.txtPointsEasyLevel) +". " + hardModeScore + getString(R.string.txtPointsHardLevel));
+				//do nothing
+				if (Locale.getDefault().getLanguage().toString().equals("pt")){
+					speakWords(myTTS,"Opção em branco");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("en")){
+					speakWords(myTTS,"blank option");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("es")){
+					speakWords(myTTS,"Opción en blanco");
+				}
 			}
 		});
 
@@ -77,9 +90,30 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			public void onClick(View v) {
 				stopServices();
 				logFunctions.logTextFile(LogMessages.MSG_BUTTON_WAS_ACCESSED + (String) buttons[0].getTag());
-				Intent i = new Intent(MainScreenActivity.this, UpdateQuestion.class);
-				startActivity(i);
-				finish();
+				if (Locale.getDefault().getLanguage().toString().equals("pt")){
+					speakWords(myTTS,"Atualizando Banco de Perguntas! Aguarde!");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("en")){
+					speakWords(myTTS,"Updating Questions Bank! Wait!");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("es")){
+					speakWords(myTTS,"Actualización Banco de preguntas! Espera!");
+				}
+								
+				
+				//chamando so o metodo da classe que fará a requisição,
+				//assim não precisaremos 
+				BaixaJson.makeJsonArrayRequest();
+				if (Locale.getDefault().getLanguage().toString().equals("pt")){
+					speakWords(myTTS,"Banco de perguntas atualizado!");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("en")){
+					speakWords(myTTS,"Question Bank upgraded!");
+				}
+				else if (Locale.getDefault().getLanguage().toString().equals("es")){
+					speakWords(myTTS,"Banco de preguntas actualizado!");
+				}
+				
 			}
 		});
 
@@ -87,8 +121,9 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[4].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//do nothing
-				
+				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
+				int hardModeScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
+				speakWords(myTTS,easyModeScore + " " + getString(R.string.txtPointsEasyLevel) +". " + hardModeScore + getString(R.string.txtPointsHardLevel));				
 			}
 		});		
 		
@@ -108,10 +143,22 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		super.onCreate(savedInstanceState);
 		nodeDescriptionString = new String[totalButtons];
 		fillScreenOptionsFromXMLFile("mainactivityoptions.xml","option");
+		getGmailAccount();
 		
 		dbAdapter = new DbAdapter(this.getApplicationContext());
 		
 		dbAdapter.setAllQuestionsToUnplayed();
+	}
+	
+	private void getGmailAccount(){
+		Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
+		Account[] accounts = AccountManager.get(context).getAccounts();
+		for (Account account : accounts) {
+		    if (emailPattern.matcher(account.name).matches()) {
+		        String possibleEmail = account.name;
+		        Toast.makeText(this, possibleEmail, Toast.LENGTH_LONG).show();
+		    }
+		}
 	}
 	
 	/**

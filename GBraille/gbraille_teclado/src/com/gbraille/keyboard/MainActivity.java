@@ -41,6 +41,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.speech.tts.TextToSpeech.OnInitListener;
 
 /**
@@ -1142,6 +1143,15 @@ public class MainActivity extends Activity implements OnInitListener {
 			        	shutdownServices();
 			        	finish();
 					}
+                	else if (utteranceId.equals("QUIT_APPLICATION")){
+			        	hapticFunctions.vibrateOnExit();
+			        	final Intent sendIntent = new Intent();
+			        	sendIntent.setAction(Intent.ACTION_SEND);
+			        	sendIntent.putExtra("key", brailleDisplay.getText());
+			        	setResult(2, sendIntent);
+			        	shutdownServices();
+			        	finish();
+					}
                 	else if (utteranceId.equals("STARTING_APPLICATION")){
             			MainActivity.this.runOnUiThread(new Runnable() {
                             @Override
@@ -1367,7 +1377,21 @@ public class MainActivity extends Activity implements OnInitListener {
 	public void exitApplication(){
 		logFunctions.logTextFile(LogMessages.MSG_KEYBOARD_EXITING);
 		enableKeyboard(false);
-		speakWords("EXIT_APPLICATION", "Saindo do teclado");		    	
+		if (Locale.getDefault().getLanguage().toString().equals("pt")){
+			speakWords("EXIT_APPLICATION", "Saindo do teclado");		   
+		}
+		else if (Locale.getDefault().getLanguage().toString().equals("en")){
+			speakWords("EXIT_APPLICATION", "Leaving the Keyboard");		   
+		}
+		else if (Locale.getDefault().getLanguage().toString().equals("es")){
+			speakWords("EXIT_APPLICATION", "Dejando el Teclado");		   
+		}
+	}
+	
+	public void quitApplication(){
+		logFunctions.logTextFile(LogMessages.MSG_KEYBOARD_EXITING);
+		enableKeyboard(false);
+		speakWords("QUIT_APPLICATION", "Saindo do teclado");		    	
 	}
 	
 	// -------------------------------------------------------------------
@@ -1501,6 +1525,22 @@ public class MainActivity extends Activity implements OnInitListener {
 			speakWords( "Modo leitura" );
 		}					
 	}
+   
+    //TESTANDO - Jonathan
+    
+    @Override
+    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) 
+        {
+        	
+        	quitApplication();
+			finger1move = finger2move = finger3move = false;
+            return true;
+        }
+        return super.onKeyLongPress(keyCode, event);
+    }
+    
+    
     
     /* proximity sensor */
     SensorEventListener sensorEventListener = new SensorEventListener() {

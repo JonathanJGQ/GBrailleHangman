@@ -49,6 +49,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	/* expected response from Braille Keyboard */
 	private static final int BRAILLE_KEYBOARD_RESPONSE = 1;
 	private static final int EXIT_CODE = 999;
+	private static final int QUIT_CODE = 888;
 	
 	int charIndexCounter;	
 	private String returnedText = "";
@@ -254,6 +255,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		startActivityForResult(checkIntent, textToSpeechFunctions.getReqTTSStatusCheck());
 		
 		/* Get a question */
+		//dbAdapter.getRandomQuestion(MainFunctions.dificultyLevel, MainFunctions.tipoLevel, 2);
 		dbAdapter.getRandomQuestion(MainFunctions.dificultyLevel, MainFunctions.tipoLevel, MainFunctions.tipolingua);
 		
 		/* TextView that will show the answer */
@@ -272,11 +274,21 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	
 	void registerScoreRecord(){
 		Log.i(TAG,"registerScoreRecord() entered ");
-		int databaseScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
-		Log.i(TAG,"databaseScore = " + databaseScore + " || Current Score = " + MainFunctions.score);
-		if (MainFunctions.score > databaseScore){
-			Log.i(TAG,"REGISTRANDO RECORD => " + MainFunctions.score);
-			dbAdapter.updateScore(DifficultyLevel.FACIL.getValue(), MainFunctions.score);
+		if(MainFunctions.dificultyLevel == DifficultyLevel.FACIL.getValue()){
+			int databaseScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
+			Log.i(TAG,"databaseScore = " + databaseScore + " || Current Score = " + MainFunctions.score);
+			if (MainFunctions.score > databaseScore){
+				Log.i(TAG,"REGISTRANDO RECORD => " + MainFunctions.score);
+				dbAdapter.updateScore(DifficultyLevel.FACIL.getValue(), MainFunctions.score);
+			}
+		}
+		else{
+			int databaseScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
+			Log.i(TAG,"databaseScore = " + databaseScore + " || Current Score = " + MainFunctions.score);
+			if (MainFunctions.score > databaseScore){
+				Log.i(TAG,"REGISTRANDO RECORD => " + MainFunctions.score);
+				dbAdapter.updateScore(DifficultyLevel.DIFICIL.getValue(), MainFunctions.score);
+			}
 		}
 	}
 	
@@ -304,6 +316,9 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 					Log.i(TAG, LogMessages.MSG_TTS_NOT_AVAILABLE);
 			}
 	    }
+		else if (requestCode == QUIT_CODE){
+			
+		}
 		else if (requestCode == EXIT_CODE){
 			if (MainFunctions.selectedOption == 1){
 				hapticFunctions.vibrateOnExit();
@@ -319,7 +334,10 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		}
 		// occurs after closing braille keyboard
 		else if (requestCode == BRAILLE_KEYBOARD_RESPONSE){
-			if(resultCode == RESULT_OK){
+			if(resultCode == 2){
+				speakWords("QUIT_APPLICATION", "");
+			}
+			else if(resultCode == RESULT_OK){
 				answerTextView.setText("");
 				returnedText = data.getStringExtra("key").trim();
 	           	Log.i("TEXTO RETORNADO DO TECLADO", returnedText);
@@ -338,7 +356,10 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		           			speakWords("EXIT_APPLICATION", getString(R.string.speakCongrats));
 	           			}
 	           			else{
-	           				speakWords("NEW_TRY", "muito bem!");	           					           				
+	           				
+	           				//speakWords("NEW_TRY", "muito bem!");
+	           				
+	           				speakWords("EXIT_APPLICATION", getString(R.string.speakCongrats));
 	           			}
 	           		}
 	           	}
@@ -499,6 +520,9 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		// do nothing
 	}
 	
+	
+	
+	
 	// ------------------------------------------------
 	// SOUND FUNCTIONS
 	// ------------------------------------------------
@@ -632,6 +656,11 @@ public class PlayGameActivity extends Activity implements OnInitListener {
         				Intent i = new Intent(getActivity(), ExitActivity.class);
         				startActivityForResult(i, EXIT_CODE);
 					}
+                	else if (utteranceId.equals("QUIT_APPLICATION")){
+                		dbAdapter.close();
+        				Intent i = new Intent(getActivity(), ExitActivity.class);
+        				startActivityForResult(i, EXIT_CODE);
+					}
                 }
  
                 @Override
@@ -671,12 +700,15 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 			return false;
 		}
 		else{
+			String mychar = "";
 			encontrado = false;
 			for(int i = 0; i < MainFunctions.selectedAnswerLength; i++){
-				String mychar = Character.toString(MainFunctions.answer.charAt(i));
+				mychar = mychar + Character.toString(MainFunctions.answer.charAt(i));		
 				if (mychar.equals(returnedText)){
 					Log.i(TAG, LogMessages.MSG_LETTER_WAS_FOUND + mychar + " - " + LogMessages.MSG_INDEX + i);
-					MainFunctions.answerCharList.set(i, mychar);
+					for(int j = 0; j < MainFunctions.selectedAnswerLength; j++){
+						MainFunctions.answerCharList.set(j, Character.toString(MainFunctions.answer.charAt(j)));
+					}
 					encontrado = true;
 				}
 			}
@@ -685,6 +717,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 			}
 		}
 		return false;
+		//return true;
 	}
     
     /**
