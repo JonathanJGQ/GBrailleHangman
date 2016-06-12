@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<menu>
+   <option>
+      <description>Atualizar Perguntas</description>
+      <description_en>Update Questions</description_en>
+      <description_es>Actualizar Preguntas</description_es>
+      <icon>@drawable/icon_add_question_forca</icon>  
+   </option>
+   
+   <option>
+      <description>Voltar</description>
+      <description_en>Retorno</description_en>
+      <description_es>Salir</description_es>
+      <icon>@drawable/icon_return</icon>      
+   </option>
+   
+   <option>
+      <description>Opção em branco</description>
+      <description_en>Blank option</description_en>
+      <description_es>opción en blanco</description_es>
+      <icon>@drawable/icon_blank</icon>      
+   </option>
+   
+   <option>
+      <description>Pontuação</description>
+      <description_en>Score</description_en>
+      <description_es>puntuación</description_es>
+      <icon>@drawable/icon_score</icon>      
+   </option>
+   
+   <option>
+      <description>Voltar</description>
+      <description_en>Retorno</description_en>
+      <description_es>Salir</description_es>
+      <icon>@drawable/icon_return</icon>     
+   </option>
+   
+   <option>
+      <description>Opção em branco</description>
+      <description_en>Blank option</description_en>
+      <description_es>opción en blanco</description_es>
+      <icon>@drawable/icon_blank</icon>      
+   </option>
+   
+</menu>

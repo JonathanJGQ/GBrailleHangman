@@ -24,6 +24,8 @@
     <string name="speakMissings">Faltan</string>
     <string name="title_activity_exit">ExitActivity</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="modo_jogo_activity">GameTypeActivity</string>
+    <string name="options_activity">OptionsActivity</string>
     <string name="cadastrarResposta">Cadastrar Respuesta</string>
     <string name="sairButton">Salir</string>
     <string name="txtViewResposta">Respuesta</string>
@@ -32,6 +34,7 @@
     <string name="btnDadosExemplo">Dados de ejemplo</string>
     <string name="textViewDificuldade">Dificultad</string>
     <string name="textViewTypeLanguage">Idioma de la cuestión</string>
+    <string name="options">Opiciones</string>
     
     <string name="txtViewPergunta">Pregunta</string>
     <string name="txtViewLetraFaltaPos">Posición de la letra faltante</string>

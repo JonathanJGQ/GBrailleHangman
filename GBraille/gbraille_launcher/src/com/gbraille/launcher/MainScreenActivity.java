@@ -64,7 +64,7 @@ public class MainScreenActivity extends AccessibleAbstractBrailleLauncherTemplat
 		fillScreenOptionsFromXMLFile("applications1.xml","app",tema);
 		
 		mainView = (LinearLayout) findViewById(R.id.layoutMainActivity);
-		
+		//mainactivityoptions
 		changeThemeNormal();
 		
 		Log.i(TAG, "IDIOMA = "+systemLanguage);

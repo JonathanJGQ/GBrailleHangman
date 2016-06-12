@@ -53,6 +53,14 @@
             android:label="@string/title_activity_cadastrar" >
         </activity>
         <activity
+            android:name="com.gbraille.forca.activity.ModoJogoActivity"
+            android:label="@string/modo_jogo_activity" >
+        </activity>
+        <activity
+            android:name="com.gbraille.forca.activity.OptionsActivity"
+            android:label="@string/modo_jogo_activity" >
+        </activity>
+        <activity
             android:name="com.gbraille.forca.activity.MainScreenActivity"
             android:alwaysRetainTaskState="false"
             android:clearTaskOnLaunch="true"

@@ -50,7 +50,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), SelectDifficultyOrthographic.class);
+				Intent i = new Intent(getActivity(), ModoJogoActivity.class);
 				startActivity(i);
 				finish();
 			}
@@ -121,12 +121,11 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[4].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
-				int hardModeScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
-				speakWords(myTTS,easyModeScore + " " + getString(R.string.txtPointsEasyLevel) +". " + hardModeScore + getString(R.string.txtPointsHardLevel));				
+				Intent i = new Intent(getActivity(), OptionsActivity.class);
+				startActivity(i);
+				finish();				
 			}
 		});		
-		
 		/* exit - onclick event */
 		this.buttons[5].setOnClickListener(new OnClickListener() {
 			@Override
