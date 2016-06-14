@@ -61,9 +61,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			@Override
 			public void onClick(View v) {
 				
-				Intent i = new Intent(getActivity(), SelectDifficultySynonymous.class);
-				startActivity(i);
-				finish();
+				
 			}
 		});
 		
@@ -88,7 +86,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[3].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				stopServices();
+				/*stopServices();
 				logFunctions.logTextFile(LogMessages.MSG_BUTTON_WAS_ACCESSED + (String) buttons[0].getTag());
 				if (Locale.getDefault().getLanguage().toString().equals("pt")){
 					speakWords(myTTS,"Atualizando Banco de Perguntas! Aguarde!");
@@ -112,7 +110,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 				}
 				else if (Locale.getDefault().getLanguage().toString().equals("es")){
 					speakWords(myTTS,"Banco de preguntas actualizado!");
-				}
+				}*/
 				
 			}
 		});

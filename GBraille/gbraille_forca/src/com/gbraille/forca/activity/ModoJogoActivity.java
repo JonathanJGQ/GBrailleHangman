@@ -50,7 +50,7 @@ public class ModoJogoActivity extends AccessibleAbstractActivityBrailleTemplate 
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), SelectDifficultyOrthographic.class);
+				Intent i = new Intent(getActivity(), SelectDifficultySynonymous.class);
 				startActivity(i);
 				finish();
 			}
@@ -88,7 +88,7 @@ public class ModoJogoActivity extends AccessibleAbstractActivityBrailleTemplate 
 		this.buttons[3].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), SelectDifficultySynonymous.class);
+				Intent i = new Intent(getActivity(), MainScreenActivity.class);
 				startActivity(i);
 				finish();
 			}
@@ -98,7 +98,7 @@ public class ModoJogoActivity extends AccessibleAbstractActivityBrailleTemplate 
 		this.buttons[4].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), MainScreenActivity.class);
+				Intent i = new Intent(getActivity(), SelectDifficultyOrthographic.class);
 				startActivity(i);
 				finish();
 			}
@@ -108,16 +108,9 @@ public class ModoJogoActivity extends AccessibleAbstractActivityBrailleTemplate 
 		this.buttons[5].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//do nothing
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Opção em branco");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"blank option");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Opción en blanco");
-				}
+				Intent i = new Intent(getActivity(), MainScreenActivity.class);
+				startActivity(i);
+				finish();
 			}
 		});
 	}

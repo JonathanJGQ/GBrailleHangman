@@ -4,14 +4,14 @@
       <description>Jogo nível fácil</description>
       <description_en>Game Easy Level</description_en>
       <description_es>Juego nivel fácil</description_es>
-      <icon>@drawable/icon_easygame</icon>      
+      <icon>@drawable/nivel_facil</icon>      
    </option>
    
    <option>
       <description>Jogo nível fácil</description>
       <description_en>Game Easy Level</description_en>
       <description_es>Juego nivel fácil</description_es>
-      <icon>@drawable/icon_easygame</icon>        
+      <icon>@drawable/nivel_facil</icon>        
    </option>
    
    <option>
@@ -26,14 +26,14 @@
       <description>Jogo nível difícil</description>
       <description_en>Game hard level</description_en>
       <description_es>Juego nivel difícil</description_es>
-      <icon>@drawable/icon_hardgame</icon>  
+      <icon>@drawable/nivel_dificil</icon>  
    </option>
    
    <option>
       <description>Jogo nível difícil</description>
       <description_en>Game hard level</description_en>
       <description_es>Juego nivel difícil</description_es>
-      <icon>@drawable/icon_hardgame</icon>      
+      <icon>@drawable/nivel_dificil</icon>      
    </option>
    
    <option>
