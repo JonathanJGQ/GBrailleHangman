@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	tools:context="com.gbraille.forca.ExitActivity" >
+	tools:context="com.gbraille.ortomonstro.ExitActivity" >
 
 	<item
 		android:id="@+id/action_settings"

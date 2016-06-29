@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gbraille.forca"
+    package="com.gbraille.ortomonstro"
     android:versionCode="3"
     android:versionName="3.0" >
 
@@ -34,34 +34,34 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-        android:name="com.gbraille.forca.controller.AppController" >
+        android:name="com.gbraille.ortomonstro.controller.AppController" >
         <activity
-            android:name="com.gbraille.forca.activity.PlayGameActivity"
+            android:name="com.gbraille.ortomonstro.activity.PlayGameActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.ExitActivity"
+            android:name="com.gbraille.ortomonstro.activity.ExitActivity"
             android:label="@string/title_activity_exit" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.CadastroActivity"
+            android:name="com.gbraille.ortomonstro.CadastroActivity"
             android:label="@string/title_activity_cadastro" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.InsertQuestionActivity"
+            android:name="com.gbraille.ortomonstro.activity.InsertQuestionActivity"
             android:label="@string/title_activity_cadastrar" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.ModoJogoActivity"
+            android:name="com.gbraille.ortomonstro.activity.ModoJogoActivity"
             android:label="@string/modo_jogo_activity" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.OptionsActivity"
+            android:name="com.gbraille.ortomonstro.activity.OptionsActivity"
             android:label="@string/modo_jogo_activity" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.MainScreenActivity"
+            android:name="com.gbraille.ortomonstro.activity.MainScreenActivity"
             android:alwaysRetainTaskState="false"
             android:clearTaskOnLaunch="true"
             android:finishOnTaskLaunch="true"
@@ -74,23 +74,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.DeleteQuestionActivity"
+            android:name="com.gbraille.ortomonstro.activity.DeleteQuestionActivity"
             android:label="@string/title_activity_excluir_pergunta" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.SelectDifficultyOrthographic"
+            android:name="com.gbraille.ortomonstro.activity.SelectDifficultyOrthographic"
             android:label="@string/title_activity_select_difficulty" >
         </activity>
         <activity
-            android:name="com.gbraille.forca.activity.SelectDifficultySynonymous"
+            android:name="com.gbraille.ortomonstro.activity.SelectDifficultySynonymous"
             android:label="@string/title_activity_select_difficulty" >
         </activity>
         <activity 
-            android:name="com.gbraille.forca.activity.UpdateQuestion"
+            android:name="com.gbraille.ortomonstro.activity.UpdateQuestion"
             android:label="@string/title_update_question_activity" >
-		</activity>
+        </activity>
         <activity
-            android:name=".controller.BaixaJson" >
+            android:name="com.gbraille.ortomonstro.controller.BaixaJson" >
         </activity>
         
         

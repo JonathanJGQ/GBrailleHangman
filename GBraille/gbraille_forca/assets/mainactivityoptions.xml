@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <menu>
    <option>
-      <description>Modo de jogo</description>
-      <description_en>Game Type</description_en>
-      <description_es>Modo de juego</description_es>
+      <description>Modo Ortografia</description>
+      <description_en>Game Ortographic</description_en>
+      <description_es>Modo Ortografía</description_es>
       <icon>@drawable/ortomonstro</icon>  
    </option>
    

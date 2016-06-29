@@ -18,8 +18,8 @@
       <description_es>Ahorcado</description_es>
       <icon>@drawable/icon_forca</icon>
       <icon_bluecontrast>@drawable/icon_forca_white</icon_bluecontrast>
-      <package>com.gbraille.forca</package>
-      <activity>com.gbraille.forca.activity.MainScreenActivity</activity>
+      <package>com.gbraille.ortomonstro</package>
+      <activity>com.gbraille.ortomonstro.activity.MainScreenActivity</activity>
       <type>application</type>
       <function>-</function>
    </app>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello_world">Hello World!</string>
-    <string name="app_name">G Braille Ahorcado</string>
+    <string name="app_name">Ortomonstro</string>
     <string name="action_settings">Settings</string>
     <string name="speakErrorAccessBrailleKeyboard">Erro al accessar el teclado Braille</string>
     
