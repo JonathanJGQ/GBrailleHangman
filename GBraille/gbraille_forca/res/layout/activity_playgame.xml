@@ -21,52 +21,30 @@
         android:textSize="30dp" />
 
     <ImageView
-        android:id="@+id/head"
+        android:id="@+id/primeiroMonstro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtQuestion"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:src="@drawable/head" />
+        android:src="@drawable/monstro_parte2" />
 
     <ImageView
-        android:id="@+id/tummy"
+        android:id="@+id/segundoMonstro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/primeiroMonstro"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/tummy" />
+        android:src="@drawable/monstro_parte2" />
 
     <ImageView
-        android:id="@+id/righthand"
+        android:id="@+id/terceiroMonstro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/head"
-        android:layout_toLeftOf="@+id/tummy"
-        android:src="@drawable/righthand" />
-
-    <ImageView
-        android:id="@+id/lefthand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/tummy"
-        android:layout_toRightOf="@+id/tummy"
-        android:src="@drawable/lefthand" />
-
-    <ImageView
-        android:id="@+id/rightleg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/head"
-        android:layout_below="@+id/tummy"
-        android:src="@drawable/rightleg" />
-
-    <ImageView
-        android:id="@+id/leftleg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/head"
-        android:layout_below="@+id/tummy"
-        android:src="@drawable/leftleg" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/segundoMonstro"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/monstro_parte2" />
 
 </RelativeLayout>

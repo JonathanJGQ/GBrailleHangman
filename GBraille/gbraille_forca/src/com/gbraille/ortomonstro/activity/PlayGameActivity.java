@@ -20,7 +20,7 @@ import android.speech.tts.TextToSpeech.OnInitListener;
 import android.widget.TextView;
 
 import com.gbraille.libraries.*;
-import com.gbraille.ortomonstro.HangmanClass;
+import com.gbraille.ortomonstro.MonsterClass;
 import com.gbraille.ortomonstro.MainFunctions;
 import com.gbraille.ortomonstro.R;
 import com.gbraille.ortomonstro.DifficultyClass.DifficultyLevel;
@@ -37,7 +37,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	private TextView answerTextView;
 	
 	/* Hangman class */
-	private HangmanClass hangman;
+	private MonsterClass hangman;
 	
 	/* timers */
     private Handler timerHandler = new Handler();
@@ -54,6 +54,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	int charIndexCounter;	
 	private String returnedText = "";
 	private int letterInputErrors = 0;
+	private int countMonsters = 0;
 	private final int MAXERRORS = 6;
 	
 	/* functions */
@@ -87,8 +88,8 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	 */
 	private void showHangmanBodyParts(){
 		task1InitializationTime = 3000;
-		hangman.setAllBodyPartsInvisible();
-		hangman.showVisibleBodyParts(letterInputErrors);
+		hangman.setAllMonstersInvisible();
+		hangman.showVisibleMonsters(countMonsters,letterInputErrors);
 	}
 	
 	/**
@@ -97,25 +98,25 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	 * @author Antonio Rodrigo
 	 * @version 1.0
 	 */
-	private void speakBodyPartDrawn(){
+	private void speakMonstersDrawn(){
 		switch(letterInputErrors){
 			case 1:
-				speakWords("NEW_TRY", getString(R.string.speakHeadWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakMonsterComming));
 				break;
 			case 2:
-				speakWords("NEW_TRY", getString(R.string.speakTummyWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakWinOneMonster));
 				break;
 			case 3:
-				speakWords("NEW_TRY", getString(R.string.speakRightArmWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakMonsterComming));
 				break;
 			case 4:
-				speakWords("NEW_TRY", getString(R.string.speakLeftArmWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakWinTwoMonster));
 				break;
 			case 5:
-				speakWords("NEW_TRY", getString(R.string.speakRightLegWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakMonsterComming));
 				break;
 			case 6:
-				speakWords("NEW_TRY", getString(R.string.speakLeftLegWasDrawn));
+				speakWords("NEW_TRY", getString(R.string.speakWinThreeMonster));
 				break;
 		}
 	}
@@ -165,13 +166,25 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		   }
 		   // if the char is the last
 		   else{
-				if (character.equals("_")){
-					play1Tick();
-					speakWords("INPUT_CHAR", getString(R.string.speakWriteALetter));
-				}
-				else{
-					speakWords("INPUT_CHAR", character + " : " + getString(R.string.speakWriteALetter));
-				}
+			   if(MainFunctions.dificultyLevel == DifficultyLevel.FACIL.getValue()){
+				   if (character.equals("_")){
+						play1Tick();
+						speakWords("INPUT_CHAR", getString(R.string.speakWriteALetter));
+					}
+					else{
+						speakWords("INPUT_CHAR", character + " : " + getString(R.string.speakWriteALetter));
+					}
+			   }
+			   if(MainFunctions.dificultyLevel == DifficultyLevel.DIFICIL.getValue()){
+				   if (character.equals("_")){
+						play1Tick();
+						speakWords("INPUT_CHAR", getString(R.string.speakWriteAWord));
+					}
+					else{
+						speakWords("INPUT_CHAR", character + " : " + getString(R.string.speakWriteAWord));
+					}
+			   }
+			   
 		   }
 		   
 		   /* repeat the action if the current char is not the last */
@@ -266,7 +279,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		charIndexCounter = 0;
 		
 		/* Loads the Hangman */
-		hangman = new HangmanClass( getActivity() );
+		hangman = new MonsterClass( getActivity() );
 		showHangmanBodyParts();
 		
 		Log.i(TAG, LogMessages.MSG_ON_CREATE_FINISHED);
@@ -356,9 +369,6 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 		           			speakWords("EXIT_APPLICATION", getString(R.string.speakCongrats));
 	           			}
 	           			else{
-	           				
-	           				//speakWords("NEW_TRY", "muito bem!");
-	           				
 	           				speakWords("EXIT_APPLICATION", getString(R.string.speakCongrats));
 	           			}
 	           		}
@@ -367,8 +377,11 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	           	else{
 	           		Log.i(TAG, LogMessages.MSG_LETTER_NOT_FOUND);
 	            	letterInputErrors++;
-
 	            	showHangmanBodyParts();
+	            	if(letterInputErrors % 2 == 0){
+	            		dbAdapter.getRandomQuestion(MainFunctions.dificultyLevel, MainFunctions.tipoLevel, MainFunctions.tipolingua);
+	            		countMonsters++;
+	            	}
 
 	            	// if the user gets MAXERRORS, game over
 	            	if (letterInputErrors == MAXERRORS){
@@ -381,7 +394,7 @@ public class PlayGameActivity extends Activity implements OnInitListener {
 	                	Log.i(TAG, LogMessages.MSG_INCORRECT_LETTER);
 	                	answerTextView.setText("");
 	            		Log.i(TAG, LogMessages.MSG_APPINFO_AFTER_KEYBOARD_RETURN);
-	            		speakBodyPartDrawn();	
+	            		speakMonstersDrawn();	
 	                }
 	           	}
 	        }

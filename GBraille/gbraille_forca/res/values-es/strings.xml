@@ -13,15 +13,20 @@
     <string name="speakRightLegWasDrawn">La pierna derecha fue diseñada</string>
     
     <string name="speakWriteALetter">Escribe una letra</string>
+    <string name="speakWriteAWord">Escribe a palabra</string>
     <string name="speakCongratulations">Muy bien: la palabra es</string>
     <string name="speakAppName">Ahorcado</string>
-    <string name="speakGameOver">Fin de juego</string>
+    <string name="speakGameOver">Usted cayó en la cueva del léxico</string>
     <string name="speakTryAgain">Inténtalo de nuevo!</string>
     <string name="speakCongrats">Muy bien! Tu acertaste!</string>
     <string name="speakAttempt">Tentativa</string>
     <string name="speakAttempts">Tentativas</string>
     <string name="speakMissing">Falta</string>
     <string name="speakMissings">Faltan</string>
+    <string name="speakMonsterComming">El monstruo está viniendo</string>
+	<string name="speakWinOneMonster">Ganó un monstruo</string>
+	<string name="speakWinTwoMonster">Ganó dos monstruos</string>
+    <string name="speakWinThreeMonster">Ganó tres monstruos</string>
     <string name="title_activity_exit">ExitActivity</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
     <string name="modo_jogo_activity">GameTypeActivity</string>

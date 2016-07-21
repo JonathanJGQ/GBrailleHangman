@@ -4,14 +4,14 @@
       <description>Modo Ortografia</description>
       <description_en>Game Ortographic</description_en>
       <description_es>Modo Ortografía</description_es>
-      <icon>@drawable/ortomonstro</icon>  
+      <icon>@drawable/ortografia</icon>  
    </option>
    
    <option>
       <description>Idiomas</description>
       <description_en>Languages</description_en>
       <description_es>idiomas</description_es>
-      <icon>@drawable/orto2</icon>      
+      <icon>@drawable/idiomas</icon>      
    </option>
    
    <option>

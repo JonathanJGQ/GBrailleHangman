@@ -77,36 +77,8 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 			}
 		});
 		
-		/* hard game - onclick event */
-		this.buttons[1].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				
-				Intent i = new Intent(getActivity(), MainScreenActivity.class);
-				startActivity(i);
-				finish();
-			}
-		});
-		
-		/* score - onclick event */
-		this.buttons[2].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				//do nothing
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Opção em branco");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"blank option");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Opción en blanco");
-				}
-			}
-		});
-
 		/* insert question - onclick event */
-		this.buttons[3].setOnClickListener(new OnClickListener() {
+		this.buttons[1].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
@@ -115,31 +87,15 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 				
 			}
 		});
-
-		/* delete question - onclick event */
-		this.buttons[4].setOnClickListener(new OnClickListener() {
+		
+		/* hard game - onclick event */
+		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				
 				Intent i = new Intent(getActivity(), MainScreenActivity.class);
 				startActivity(i);
 				finish();
-			}
-		});		
-		
-		/* exit - onclick event */
-		this.buttons[5].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				//do nothing
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Opção em branco");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"blank option");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Opción en blanco");
-				}
 			}
 		});
 	}
@@ -190,9 +146,6 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 		buttons[0] = (ImageButton) findViewById(R.id.botao1);
 		buttons[1] = (ImageButton) findViewById(R.id.botao2);
 		buttons[2] = (ImageButton) findViewById(R.id.botao3);
-		buttons[3] = (ImageButton) findViewById(R.id.botao4);	
-		buttons[4] = (ImageButton) findViewById(R.id.botao5);
-		buttons[5] = (ImageButton) findViewById(R.id.botao6);
 	}
 
 	/**
@@ -203,7 +156,7 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 	 */
 	@Override
 	protected void setNumberButtons() {
-		this.totalButtons = 6;
+		this.totalButtons = 3;
 	}
 	
 	/**

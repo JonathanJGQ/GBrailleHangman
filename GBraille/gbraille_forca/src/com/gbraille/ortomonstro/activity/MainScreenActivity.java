@@ -45,7 +45,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	 * @version 1.0 
 	 */
 	protected void setOnClickForButtons() {		
-		/* easy game - onclick event */
+		/* jogo Ortografia - onclick event */
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -55,16 +55,17 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			}
 		});
 		
-		/* hard game - onclick event */
+		/* jogo Idiomas - onclick event */
 		this.buttons[1].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
-				
+				Intent i = new Intent(getActivity(), ModoJogoActivity.class);
+				startActivity(i);
+				finish();
 			}
 		});
 		
-		/* score - onclick event */
+		/* tutorial - onclick event */
 		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -81,7 +82,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			}
 		});
 
-		/* insert question - onclick event */
+		/* histórico - onclick event */
 		this.buttons[3].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -114,7 +115,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			}
 		});
 
-		/* delete question - onclick event */
+		/* opções - onclick event */
 		this.buttons[4].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

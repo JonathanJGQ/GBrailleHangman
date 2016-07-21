@@ -13,15 +13,20 @@
     <string name="speakRightLegWasDrawn">Right leg was drawn</string>
     
     <string name="speakWriteALetter">Input a letter</string>
+    <string name="speakWriteAWord">Input the word</string>
     <string name="speakCongratulations">Congratulations: the word is</string>
-    <string name="speakAppName">Hangman</string>
-    <string name="speakGameOver">Game Over</string>
+    <string name="speakAppName">Ortomonstro</string>
+    <string name="speakGameOver">You fall in the Lexical Cave</string>
     <string name="speakTryAgain">Try again!</string>
     <string name="speakCongrats">Good! You got it!</string>
     <string name="speakAttempt">Attempt</string>
     <string name="speakAttempts">Attempts</string>
     <string name="speakMissing">missing</string>
     <string name="speakMissings">missing</string>
+    <string name="speakMonsterComming">The monster is comming</string>
+    <string name="speakWinOneMonster">Win one monster</string>
+    <string name="speakWinTwoMonster">Win two monsters!</string>
+    <string name="speakWinThreeMonster">Win three monsters!</string>
     <string name="title_activity_exit">ExitActivity</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
     <string name="modo_jogo_activity">ModoJogoActivity</string>

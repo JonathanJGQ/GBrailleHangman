@@ -13,10 +13,15 @@
     <string name="speakRightLegWasDrawn">Desenhei a perna direita</string>
     
     <string name="speakWriteALetter">Escreva uma letra</string>
+    <string name="speakWriteAWord">Escreva a palavra</string>
     <string name="speakCongratulations">Parabéns: a palavra é</string>
-    <string name="speakAppName">Forca</string>
-    <string name="speakGameOver">Fim de jogo</string>
+    <string name="speakAppName">Ortomonstro</string>
+    <string name="speakGameOver">Você caiu na caverna do léxico</string>
     <string name="speakTryAgain">Tente novamente!</string>
+    <string name="speakMonsterComming">O monstro está chegando</string>
+    <string name="speakWinOneMonster">Ganhou um monstro!</string>
+    <string name="speakWinTwoMonster">Ganhou dois monstros!</string>
+    <string name="speakWinThreeMonster">Ganhou três monstros!</string>
     <string name="speakCongrats">Parabéns! Você acertou!</string>
     <string name="speakAttempt">Tentativa</string>
     <string name="speakAttempts">Tentativas</string>

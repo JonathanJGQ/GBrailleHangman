@@ -8,20 +8,6 @@
    </option>
    
    <option>
-      <description>Voltar</description>
-      <description_en>Retorno</description_en>
-      <description_es>Salir</description_es>
-      <icon>@drawable/icon_return</icon>      
-   </option>
-   
-   <option>
-      <description>Opção em branco</description>
-      <description_en>Blank option</description_en>
-      <description_es>opción en blanco</description_es>
-      <icon>@drawable/icon_blank</icon>      
-   </option>
-   
-   <option>
       <description>Pontuação</description>
       <description_en>Score</description_en>
       <description_es>puntuación</description_es>
@@ -33,13 +19,6 @@
       <description_en>Retorno</description_en>
       <description_es>Salir</description_es>
       <icon>@drawable/icon_return</icon>     
-   </option>
-   
-   <option>
-      <description>Opção em branco</description>
-      <description_en>Blank option</description_en>
-      <description_es>opción en blanco</description_es>
-      <icon>@drawable/icon_blank</icon>      
    </option>
    
 </menu>
