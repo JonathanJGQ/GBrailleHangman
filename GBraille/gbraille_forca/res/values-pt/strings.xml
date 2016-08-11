@@ -40,6 +40,7 @@
     <string name="textViewDificuldade">Dificuldade</string>
     <string name="textViewTypeLanguage">Lingua da questão</string>
     <string name="options">Opções</string>
+    <string name="tutorial">Tutorial</string>
     
     <string name="txtViewPergunta">Pergunta</string>
     <string name="txtViewLetraFaltaPos">Posição da letra que falta</string>

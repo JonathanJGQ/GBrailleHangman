@@ -49,6 +49,7 @@
     <string name="speakAplicacaoNaoInstalada">The application is not installed</string>
     <string name="title_activity_excluir_pergunta">ExcluirPerguntaActivity</string>
     <string name="options">Options</string>
+    <string name="tutorial">Tutorial</string>
     
     <string name="EasyLevel">Easy</string>
     <string name="HardLevel">Hard</string>

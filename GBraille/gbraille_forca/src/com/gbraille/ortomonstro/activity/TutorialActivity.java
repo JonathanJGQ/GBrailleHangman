@@ -34,7 +34,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplate {
+public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate {
     DbAdapter dbAdapter;
     String systemLanguage = Locale.getDefault().getLanguage(); // pt, en, es
     
@@ -45,83 +45,29 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	 * @version 1.0 
 	 */
 	protected void setOnClickForButtons() {		
-		/* jogo Ortografia - onclick event */
+		/* easy game - onclick event */
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), ModoJogoActivity.class);
-				startActivity(i);
-				finish();
+				
 			}
 		});
 		
-		/* jogo Idiomas - onclick event */
+		/* insert question - onclick event */
 		this.buttons[1].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), ModoJogoActivity.class);
-				startActivity(i);
-				finish();
+				
 			}
 		});
 		
-		/* tutorial - onclick event */
+		/* hard game - onclick event */
 		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), TutorialActivity.class);
-				startActivity(i);
-				finish();
-			}
-		});
-
-		/* histórico - onclick event */
-		this.buttons[3].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				/*stopServices();
-				logFunctions.logTextFile(LogMessages.MSG_BUTTON_WAS_ACCESSED + (String) buttons[0].getTag());
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Atualizando Banco de Perguntas! Aguarde!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"Updating Questions Bank! Wait!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Actualización Banco de preguntas! Espera!");
-				}
-								
 				
-				//chamando so o metodo da classe que fará a requisição,
-				//assim não precisaremos 
-				BaixaJson.makeJsonArrayRequest();
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Banco de perguntas atualizado!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"Question Bank upgraded!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Banco de preguntas actualizado!");
-				}*/
-				
-			}
-		});
-
-		/* opções - onclick event */
-		this.buttons[4].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(getActivity(), OptionsActivity.class);
+				Intent i = new Intent(getActivity(), MainScreenActivity.class);
 				startActivity(i);
-				finish();				
-			}
-		});		
-		/* exit - onclick event */
-		this.buttons[5].setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				destroyServices();
 				finish();
 			}
 		});
@@ -129,26 +75,12 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		screenName = getString(R.string.app_name);
+		screenName = getString(R.string.tutorial);
 		super.onCreate(savedInstanceState);
 		nodeDescriptionString = new String[totalButtons];
-		fillScreenOptionsFromXMLFile("mainactivityoptions.xml","option");
-		getGmailAccount();
+		fillScreenOptionsFromXMLFile("tutorial.xml","option");
 		
 		dbAdapter = new DbAdapter(this.getApplicationContext());
-		
-		dbAdapter.setAllQuestionsToUnplayed();
-	}
-	
-	private void getGmailAccount(){
-		Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-		Account[] accounts = AccountManager.get(context).getAccounts();
-		for (Account account : accounts) {
-		    if (emailPattern.matcher(account.name).matches()) {
-		        String possibleEmail = account.name;
-		        Toast.makeText(this, possibleEmail, Toast.LENGTH_LONG).show();
-		    }
-		}
 	}
 	
 	/**
@@ -160,7 +92,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	 */
 	@Override
 	protected int getLayoutResourceId() {
-		return R.layout.activity_main;
+		return R.layout.activity_opcoes;
 	}
 
 	/**
@@ -172,7 +104,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	 */
 	@Override
 	protected Activity getActivity() {
-		return MainScreenActivity.this;
+		return TutorialActivity.this;
 	}
 
 	/**
@@ -187,9 +119,6 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		buttons[0] = (ImageButton) findViewById(R.id.botao1);
 		buttons[1] = (ImageButton) findViewById(R.id.botao2);
 		buttons[2] = (ImageButton) findViewById(R.id.botao3);
-		buttons[3] = (ImageButton) findViewById(R.id.botao4);	
-		buttons[4] = (ImageButton) findViewById(R.id.botao5);
-		buttons[5] = (ImageButton) findViewById(R.id.botao6);
 	}
 
 	/**
@@ -200,7 +129,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 	 */
 	@Override
 	protected void setNumberButtons() {
-		this.totalButtons = 6;
+		this.totalButtons = 3;
 	}
 	
 	/**
@@ -228,7 +157,7 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 			        	finish();
 					}
                 	else if (utteranceId.equals("STARTING_APPLICATION")){
-            			MainScreenActivity.this.runOnUiThread(new Runnable() {
+            			TutorialActivity.this.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                             	// vibrates and ebables keyboard when application starts

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<menu>
+   <option>
+      <description>Tutorial do Jogo</description>
+      <description_en>Game Tutorial</description_en>
+      <description_es>Tutorial del juego</description_es>
+      <icon>@drawable/tutorial_jogo</icon>  
+   </option>
+   
+   <option>
+      <description>Tutorial do teclado</description>
+      <description_en>Keyboard Tutorial</description_en>
+      <description_es>Tutorial de teclado</description_es>
+      <icon>@drawable/tutorial_teclado</icon>      
+   </option>
+   
+   <option>
+      <description>Voltar</description>
+      <description_en>Retorno</description_en>
+      <description_es>Salir</description_es>
+      <icon>@drawable/icon_return</icon>     
+   </option>
+   
+</menu>

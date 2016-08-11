@@ -61,6 +61,10 @@
             android:label="@string/modo_jogo_activity" >
         </activity>
         <activity
+            android:name="com.gbraille.ortomonstro.activity.TutorialActivity"
+            android:label="@string/modo_jogo_activity" >
+        </activity>
+        <activity
             android:name="com.gbraille.ortomonstro.activity.MainScreenActivity"
             android:alwaysRetainTaskState="false"
             android:clearTaskOnLaunch="true"
