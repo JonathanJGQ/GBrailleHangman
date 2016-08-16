@@ -30,7 +30,9 @@
     <string name="title_activity_exit">ExitActivity</string>
     <string name="title_activity_cadastro">CadastroActivity</string>
     <string name="modo_jogo_activity">ModoJogoActivity</string>
+    <string name="historico_activity">HistoricoActivity</string>
     <string name="options_activity">OpçõesActivity</string>
+    <string name="tutorial_activity">TutorialActivity</string>
     <string name="cadastrarResposta">Cadastrar Resposta</string>
     <string name="sairButton">Sair</string>
     <string name="txtViewResposta">Resposta</string>
@@ -41,6 +43,7 @@
     <string name="textViewTypeLanguage">Lingua da questão</string>
     <string name="options">Opções</string>
     <string name="tutorial">Tutorial</string>
+    <string name="historico">Histórico</string>
     
     <string name="txtViewPergunta">Pergunta</string>
     <string name="txtViewLetraFaltaPos">Posição da letra que falta</string>

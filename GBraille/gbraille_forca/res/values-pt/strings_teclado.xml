@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tutorial_teclado">A forma de funcionamento do teclado GBraille permite que um símbolo
+Braille seja inserido em três passos com alguns toques, deixando mais rápido o
+processo de escrita. A tela do teclado é dividida em duas colunas dispostas verticalmente. Sendo a coluna da esquerda correspondente a primeira coluna de uma célula Braille e a coluna da direita correspondente à segunda coluna da célula. Sendo assim, o único marco relevante na tela touchscreen para o jogador é a linha que separa essas duas colunas, pois esta auxiliará a identificação do toque correto na tela para produzir o caractere braille.
+
+Você não precisa acertar fielmente os campos que correspondem aos seis pontos que compõem a célula Braille. O que você precisa é memorizar que a composição do seu primeiro toque no teclado corresponde ao desenho da primeira linha da célula braille (pontos 1 e 4), e que o seu segundo toque corresponde ao desenho da segunda linha da célula braille (pontos 2 e 5), e que o seu terceiro toque corresponde ao desenho da terceira linha da célula braille. 
+
+Ou seja, para fazer a primeira linha você pode tocar com apenas um dedo do lado esquerdo e já será marcado o ponto um, ou pode tocar com dois dedos simultaneamente fazendo o primeiro dedo corresponder ao ponto um na coluna esquerda e o segundo dedo corresponder ao ponto dois na coluna direita marcando assim os pontos 1 e 4 ao mesmo tempo. O mesmo raciocínio se aplica às outras duas linhas, que são os pontos 2 e 5, 3 e 6, respectivamente. Se você necessitar deixar alguma linha em branco para formar a letra basta deslizar o dedo para a direita na formação da linha, seria como o gesto de “linha em branco”.
+
+Por exemplo: Para fazer a letra “C” faça Um toque com os dois dedos na tela, simultaneamente; Um toque no lado esquerdo da tela deslizando o dedo para a direita; Um toque no lado esquerdo da tela, deslizando o dedo para a direita. Isso se traduz nos dois pontos da primeira linha marcados e as outras duas linhas em branco, que corresponde ao caractere “c” em Braille.
+
+Um das características particulares do teclado GBraille Keyboard está na forma como
+ele responde aos toques na tela. Cada ponto teve um som associado de acordo com a
+altura do som. Os pontos da primeira linha (1 e 4) são agudos, o da segunda linha (2 e 5)
+são intermediários e o da terceira linha (3 e 6) são graves. Assim os toques podem ser
+distinguidos pelo usuário mais facilmente.</string>
+</resources>

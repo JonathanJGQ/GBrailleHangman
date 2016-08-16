@@ -34,7 +34,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate {
+public class HistoricoActivity extends AccessibleAbstractActivityBrailleTemplate {
     DbAdapter dbAdapter;
     String systemLanguage = Locale.getDefault().getLanguage(); // pt, en, es
     
@@ -45,7 +45,7 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 	 * @version 1.0 
 	 */
 	protected void setOnClickForButtons() {		
-		/* tutorial jogo - onclick event */
+		/* atividades*/
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -53,15 +53,19 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 			}
 		});
 		
-		/* totorial teclado - onclick event */
+		//pontuação
 		this.buttons[1].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				speakWords(myTTS, getResources().getString(R.string.tutorial_teclado));
+				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
+				int hardModeScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
+				speakWords(myTTS,easyModeScore + " " + getString(R.string.txtPointsEasyLevel) +". " + hardModeScore + getString(R.string.txtPointsHardLevel));
+				
 			}
 		});
 		
-		/* hard game - onclick event */
+		
+		/* sair */
 		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -75,10 +79,10 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		screenName = getString(R.string.tutorial);
+		screenName = getString(R.string.historico);
 		super.onCreate(savedInstanceState);
 		nodeDescriptionString = new String[totalButtons];
-		fillScreenOptionsFromXMLFile("tutorial.xml","option");
+		fillScreenOptionsFromXMLFile("historico.xml","option");
 		
 		dbAdapter = new DbAdapter(this.getApplicationContext());
 	}
@@ -104,7 +108,7 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 	 */
 	@Override
 	protected Activity getActivity() {
-		return TutorialActivity.this;
+		return HistoricoActivity.this;
 	}
 
 	/**
@@ -157,7 +161,7 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 			        	finish();
 					}
                 	else if (utteranceId.equals("STARTING_APPLICATION")){
-            			TutorialActivity.this.runOnUiThread(new Runnable() {
+            			HistoricoActivity.this.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                             	// vibrates and ebables keyboard when application starts

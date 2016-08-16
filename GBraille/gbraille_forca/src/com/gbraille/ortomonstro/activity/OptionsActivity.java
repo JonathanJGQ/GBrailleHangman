@@ -45,7 +45,7 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 	 * @version 1.0 
 	 */
 	protected void setOnClickForButtons() {		
-		/* easy game - onclick event */
+		/*atualizar banco*/
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -77,18 +77,16 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 			}
 		});
 		
-		/* insert question - onclick event */
+		//perfil
 		this.buttons[1].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				int easyModeScore = dbAdapter.getScore(DifficultyLevel.FACIL.getValue());
-				int hardModeScore = dbAdapter.getScore(DifficultyLevel.DIFICIL.getValue());
-				speakWords(myTTS,easyModeScore + " " + getString(R.string.txtPointsEasyLevel) +". " + hardModeScore + getString(R.string.txtPointsHardLevel));				
+								
 				
 			}
 		});
 		
-		/* hard game - onclick event */
+		/* sair*/
 		this.buttons[2].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

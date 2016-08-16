@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<menu>
+   <option>
+      <description>Suas Atividades</description>
+      <description_en>Activities</description_en>
+      <description_es>Actividades</description_es>
+      <icon>@drawable/atividades</icon>  
+   </option>
+   
+   <option>
+      <description>Pontuação</description>
+      <description_en>Score</description_en>
+      <description_es>Pontuacion</description_es>
+      <icon>@drawable/icon_score</icon>      
+   </option>
+   
+   <option>
+      <description>Voltar</description>
+      <description_en>Retorno</description_en>
+      <description_es>Salir</description_es>
+      <icon>@drawable/icon_return</icon>     
+   </option>
+   
+</menu>

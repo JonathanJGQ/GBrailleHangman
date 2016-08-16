@@ -58,11 +58,15 @@
         </activity>
         <activity
             android:name="com.gbraille.ortomonstro.activity.OptionsActivity"
-            android:label="@string/modo_jogo_activity" >
+            android:label="@string/options_activity" >
         </activity>
         <activity
             android:name="com.gbraille.ortomonstro.activity.TutorialActivity"
-            android:label="@string/modo_jogo_activity" >
+            android:label="@string/tutorial_activity" >
+        </activity>
+        <activity
+            android:name="com.gbraille.ortomonstro.activity.HistoricoActivity"
+            android:label="@string/historico_activity" >
         </activity>
         <activity
             android:name="com.gbraille.ortomonstro.activity.MainScreenActivity"

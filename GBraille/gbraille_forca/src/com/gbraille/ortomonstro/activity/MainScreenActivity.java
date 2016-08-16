@@ -79,32 +79,9 @@ public class MainScreenActivity extends AccessibleAbstractActivityBrailleTemplat
 		this.buttons[3].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				/*stopServices();
-				logFunctions.logTextFile(LogMessages.MSG_BUTTON_WAS_ACCESSED + (String) buttons[0].getTag());
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Atualizando Banco de Perguntas! Aguarde!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"Updating Questions Bank! Wait!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Actualización Banco de preguntas! Espera!");
-				}
-								
-				
-				//chamando so o metodo da classe que fará a requisição,
-				//assim não precisaremos 
-				BaixaJson.makeJsonArrayRequest();
-				if (Locale.getDefault().getLanguage().toString().equals("pt")){
-					speakWords(myTTS,"Banco de perguntas atualizado!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("en")){
-					speakWords(myTTS,"Question Bank upgraded!");
-				}
-				else if (Locale.getDefault().getLanguage().toString().equals("es")){
-					speakWords(myTTS,"Banco de preguntas actualizado!");
-				}*/
-				
+				Intent i = new Intent(getActivity(), HistoricoActivity.class);
+				startActivity(i);
+				finish();
 			}
 		});
 

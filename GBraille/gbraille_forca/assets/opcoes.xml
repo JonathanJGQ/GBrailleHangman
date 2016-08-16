@@ -8,10 +8,10 @@
    </option>
    
    <option>
-      <description>Pontuação</description>
-      <description_en>Score</description_en>
-      <description_es>puntuación</description_es>
-      <icon>@drawable/icon_score</icon>      
+      <description>Perfil</description>
+      <description_en>Profile</description_en>
+      <description_es>Perfil</description_es>
+      <icon>@drawable/perfil</icon>      
    </option>
    
    <option>
