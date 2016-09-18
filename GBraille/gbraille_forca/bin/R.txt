@@ -179,7 +179,8 @@ int string title_activity_select_difficulty 0x7f050044
 int string title_update_question_activity 0x7f050046
 int string tutorial 0x7f050030
 int string tutorial_activity 0x7f05001e
-int string tutorial_teclado 0x7f050047
+int string tutorial_jogo 0x7f050047
+int string tutorial_teclado 0x7f050048
 int string txtConfirmacao 0x7f050036
 int string txtConfirmarExclusaoPergunta 0x7f050037
 int string txtEasyLevel 0x7f050034

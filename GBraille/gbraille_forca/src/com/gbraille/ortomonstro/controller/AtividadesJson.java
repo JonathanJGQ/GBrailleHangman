@@ -27,14 +27,14 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.gbraille.ortomonstro.R;
 import com.gbraille.ortomonstro.database.DbAdapter;
  
-public class BaixaJson {
+public class AtividadesJson {
  
     
      
     // json array response url
-    private static String urlJsonArry = "http://pesquisa.great.ufc.br/greattourv2/banco.json";
+    private static String urlJsonArry = "http://gbraile-brsilva.rhcloud.com/rest/gbraile/student/jonathan@gmail/";
  
-    private static String TAG = BaixaJson.class.getSimpleName();
+    private static String TAG = AtividadesJson.class.getSimpleName();
    
  
     // Progress dialog
@@ -78,22 +78,20 @@ public class BaixaJson {
                                person.toString();
                                 
                                 //seta as paradas aqui :)
-                                String question = person.getString("questao");
-                                String pergunta = person.getString("question");
-                                String resposta = person.getString("answer");
-                                String letraFaltaPos = person.getString("missingCharPos");
+                                String codigo = person.getString("code");
+                                String nome = person.getString("name");
+                                String dataInicial = person.getString("dateInitial");
+                                String dataFinal = person.getString("dateFinal");
+                                String numeroDeQuestoes = person.getString("numberOfQuestion");
+                                String descricao = person.getString("descripton");
+                                String level = person.getString("level");
                                 
-                                
-                                //descomenta à partir daqui :)
-                                int dificuldade = Integer.parseInt(person.getString("dificuldade"));
-                                int jogo = Integer.parseInt(person.getString("jogo"));
-                                int linguagem = Integer.parseInt(person.getString("lingua"));
                                 
                                 System.out.println("TÁ LENDO!!");
-                                System.out.println("AQUI" + dificuldade);
+                                System.out.println("AQUI" + nome);
                                 
                                
-                                DbAdapter.insertQuestion(pergunta, resposta, letraFaltaPos, dificuldade, jogo, linguagem);
+                                DbAdapter.insertAtividade(codigo, nome, dataInicial, dataFinal, numeroDeQuestoes, descricao, level);
                                
  
                             }

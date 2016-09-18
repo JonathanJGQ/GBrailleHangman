@@ -49,7 +49,7 @@ public class TutorialActivity extends AccessibleAbstractActivityBrailleTemplate 
 		this.buttons[0].setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
+				speakWords(myTTS, getResources().getString(R.string.tutorial_jogo));
 			}
 		});
 		

@@ -134,6 +134,19 @@ public class DbAdapter {
 		db.insert(DbHelper.TABLE_RESPOSTAS, null, values);
 	}
 	
+	public static void insertAtividade(String codigo, String nome, String dataInicial, String dataFinal, String numeroDeQuestoes, String descricao, String level){
+		ContentValues values = new ContentValues();
+		values.put(DbHelper.CODE, codigo);
+		values.put(DbHelper.NAME, nome);		
+		values.put(DbHelper.DATE_INITIAL, dataInicial);
+		values.put(DbHelper.DATE_FINAL, dataFinal);
+		values.put(DbHelper.NUMBER_OF_QUESTIONS, numeroDeQuestoes);
+		values.put(DbHelper.DESCRIPTION, descricao);
+		values.put(DbHelper.LEVEL, level);
+		
+		db.insert(DbHelper.TABLE_ATIVIDADES, null, values);
+	}
+	
 	public void deleteQuestion(int id){
 		db.delete(DbHelper.TABLE_RESPOSTAS, DbHelper.COLUMN_ID+" = " + id, null); 
 	}

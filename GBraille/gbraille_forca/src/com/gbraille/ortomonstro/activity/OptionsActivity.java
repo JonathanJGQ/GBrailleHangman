@@ -15,6 +15,7 @@ import com.gbraille.libraries.LogMessages;
 import com.gbraille.ortomonstro.MainFunctions;
 import com.gbraille.ortomonstro.R;
 import com.gbraille.ortomonstro.DifficultyClass.DifficultyLevel;
+import com.gbraille.ortomonstro.controller.AtividadesJson;
 import com.gbraille.ortomonstro.controller.BaixaJson;
 import com.gbraille.ortomonstro.database.DbAdapter;
 
@@ -60,10 +61,9 @@ public class OptionsActivity extends AccessibleAbstractActivityBrailleTemplate {
 				else if (Locale.getDefault().getLanguage().toString().equals("es")){
 					speakWords(myTTS,"Actualización Banco de preguntas! Espera!");
 				}
-								
-				
 				//chamando so o metodo da classe que fará a requisição,
 				//assim não precisaremos 
+				AtividadesJson.makeJsonArrayRequest();
 				BaixaJson.makeJsonArrayRequest();
 				if (Locale.getDefault().getLanguage().toString().equals("pt")){
 					speakWords(myTTS,"Banco de perguntas atualizado!");

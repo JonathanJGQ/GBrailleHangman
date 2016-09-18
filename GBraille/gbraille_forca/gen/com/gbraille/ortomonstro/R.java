@@ -215,7 +215,8 @@ public final class R {
         public static final int title_update_question_activity=0x7f050046;
         public static final int tutorial=0x7f050030;
         public static final int tutorial_activity=0x7f05001e;
-        public static final int tutorial_teclado=0x7f050047;
+        public static final int tutorial_jogo=0x7f050047;
+        public static final int tutorial_teclado=0x7f050048;
         /**  ExcluirPerguntaActivity 
  ExcluirPerguntaActivity 
  ExcluirPerguntaActivity 

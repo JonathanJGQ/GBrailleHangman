@@ -15,6 +15,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	public static String TABLE_PONTUACAO = "pontuacao";
 	public static String TABLE_INSTALACAO = "instalacao";
 	public static String TABLE_TIPO_LINGUAGEM = "linguagem";
+	public static String TABLE_ATIVIDADES = "atividades";
 	
 	/* table dificuldade */
 	public static String COLUMN_DIFICULDADE = "dificuldade";
@@ -35,6 +36,16 @@ public class DbHelper extends SQLiteOpenHelper {
 	public static String COLUMN_LETRA_FALTA_POS = "letrafaltapos";
 	public static String COLUMN_ACESSADO = "acessado";
 	
+	/* table atividades*/
+	
+	public static String CODE = "codigo";
+	public static String NAME = "nome";
+	public static String DATE_INITIAL = "dataInicial";
+	public static String DATE_FINAL = "dataFinal";
+	public static String NUMBER_OF_QUESTIONS = "numeroDeQuestoes";
+	public static String DESCRIPTION = "descricao";
+	public static String LEVEL = "level";
+	
 	/* table pontuacao */
 	
 	public static String COLUMN_PONTUACAO = "pontuacao";
@@ -44,6 +55,16 @@ public class DbHelper extends SQLiteOpenHelper {
 	public static String COLUMN_INSTALADO = "instalado";
 		
 	/* criação de tabelas */
+	
+	private static String CREATE_TABLE_ATIVIDADES = "create table " + TABLE_ATIVIDADES
+			+ "( "
+			+ CODE + " INTEGER PRIMARY KEY, "
+			+ NAME + " VARCHAR(255), "
+			+ DATE_INITIAL + " VARCHAR(255), "
+			+ DATE_FINAL + " VARCHAR(255), "
+			+ NUMBER_OF_QUESTIONS + " VARCHAR(255), "
+			+ DESCRIPTION + " VARCHAR(255), "
+			+ LEVEL + " VARCHAR(255) ";
 	
 	private static String CREATE_TABLE_INSTALACAO = "create table " + TABLE_INSTALACAO 
 			+ "( " 
@@ -166,7 +187,8 @@ public class DbHelper extends SQLiteOpenHelper {
 		db.execSQL(INSERT_PONTUACAO_FACIL);
 		db.execSQL(INSERT_PONTUACAO_DIFICIL);
 		db.execSQL(CREATE_TABLE_INSTALACAO);
-		db.execSQL(INSERT_INSTALACAO_NAO);		
+		db.execSQL(INSERT_INSTALACAO_NAO);
+		db.execSQL(CREATE_TABLE_ATIVIDADES);
 	}
 
 	@Override
@@ -178,6 +200,7 @@ public class DbHelper extends SQLiteOpenHelper {
 		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_RESPOSTAS);
 		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_PONTUACAO);
 		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_INSTALACAO);
+		 db.execSQL("DROP TABLE IF EXISTS " + TABLE_ATIVIDADES);
 		 onCreate(db);
 	}
 	

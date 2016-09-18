@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tutorial_jogo">Em cada jogada é exibida uma pergunta, e o jogador precisa 
+	    repassar parte da palavra como resposta (nível fácil) ou uma palavra completa 
+	    (nível difícil), inserindo todas as letras, uma por vez, através do teclado GBraille.
+	    As perguntas não obedecem a uma sequência pré-definida de exibição, aumentando o 
+	    desafio. 
+
+		Durante cada pergunta, você terá duas chances de acertar a resposta. 
+		A cada erro um monstro ortográfico vai se formando, portanto em um total de dois 
+		erros você acumula um monstro ortográfico. A cada três monstros adquiridos você 
+		fica preso na caverna do léxico, tendo acesso somente a perguntas do tipo 
+		“premium”, cadastradas pelo professor. A cada pergunta do “premium” acertada você 
+		adquire uma moeda. A cada QUATRO MOEDAS ESCUDO VOCÊ RETORNARÁ ÀS FASES NORMAIS DO 
+		JOGO COM PONTUAÇÃO PADRÃO.
+
+		Ao errar UMA VEZ a  pergunta é sonorizada a opção “ajuda”, caso o professor a 
+		tenha cadastrado, a qual dispõe de dicas sobre os caracteres solicitados e de uma 
+		explicação sobre o tipo de atividade ortográfica que está em prática.
+
+		Pontuação: caso você acerte a pergunta na primeira vez você ganhará vinte 
+		pontos. Caso acerte a pergunta na primeira vez ganhará dez pontos. 
+		E, caso você acerte a pergunta acessando o trecho de “ajuda” ganhará 
+		somente cinco pontos.
+	    
+	</string>
+</resources>
